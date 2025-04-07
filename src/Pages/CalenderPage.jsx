@@ -64,9 +64,9 @@ const CalenderPage = () => {
             <PageHeader heading="Calendar of Events"/>
         <CustomDatePicker/>
         <div className='flex justify-start items-center gap-2'>
-           <Dropdown onChange={handleClassChange} name="Class" values={['All', 'AZPL', 'AZPL Rookies']} isOpen={openDropdown === 'Class'}
+           <Dropdown onChange={handleClassChange} name="Class" values={[{name: null, values:['All', 'AZPL', 'AZPL Rookies']}]} isOpen={openDropdown === 'Class'}
         onToggle={() => handleToggle('Class')} selectedValue={selectedClass}/>
-           <Dropdown onChange={handleClassChange} name="Leagues" values={['All', 'AZPL', 'AZPL Rookies']} isOpen={openDropdown === 'Leagues'}
+           <Dropdown onChange={handleClassChange} name="Leagues" values={[{name: null, values:['All', 'AZPL', 'AZPL Rookies']}]} isOpen={openDropdown === 'Leagues'}
         onToggle={() => handleToggle('Leagues')} selectedValue={selectedLeague}/>
 
         </div>

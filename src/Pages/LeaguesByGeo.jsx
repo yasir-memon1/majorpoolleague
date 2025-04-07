@@ -186,7 +186,10 @@ const leagues = [
 ].sort();
 
 const CITIES = [
-  "Phoenix",
+  {
+    name: null,
+    values: [
+      "Phoenix",
   "Tucson",
   "Mesa",
   "Chandler",
@@ -196,6 +199,8 @@ const CITIES = [
   "Peoria",
   "Tempe",
   "Surprise"
+    ]
+  }
 ]
 const LeaguesByGeo = ()=>{
     const [selectedCity, setSelectedCity] = useState(null);

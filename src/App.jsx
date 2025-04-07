@@ -11,6 +11,13 @@ import TopPlayers from './Pages/TopPlayers'
 import TopSeasons from './Pages/TopSeasons'
 import TopTeams from './Pages/TopTeams'
 import TopMatches from './Pages/TopMatches'
+import Home from './Pages/Home'
+import StatsPage from './Pages/StatsPage'
+import StandingsPage from './Pages/StandingsPage'
+import PlayersPage from './Pages/PlayersPage'
+import PlayerProfile from './Pages/PlayerProfile'
+import HeadToHeadPage from './Pages/HeadToHeadPage'
+import HeadToHeadPlayer from './Pages/HeadToHeadPlayer'
 
 function App() {
 
@@ -18,8 +25,16 @@ function App() {
     <>
     <Navbar/>
     <Routes>
-      <Route path='/' element={<Table/>}/>
+      <Route path='/majorpoolleague' element={<Home/>}/>
       <Route path='/calendar' element={<CalenderPage/>}/>
+      <Route path='/stats' element={<StatsPage/>}/> 
+      <Route path='/standings' element={<StandingsPage/>}/>
+
+      <Route path='/players' element={<PlayersPage/>}/>
+      <Route path='/player/:name' element={<PlayerProfile/>}/>
+      <Route path="head-to-head/:player" element={<HeadToHeadPage/>}/>
+      <Route path="head-to-head/:player/:opponent" element={<HeadToHeadPlayer/>}/>
+
       <Route path='/leagues-by-geography' element={<LeaguesByGeo/>}/>
       <Route path='/leagues-by-name' element={<LeaguesByName/>}/>
       <Route path='/leagues-by-size' element={<LeaguesBySize/>}/>

@@ -74,7 +74,7 @@ const CustomDatePicker = ({ onDateChange }) => {
       
 
       {isCalendarOpen && (
-  <div className="absolute top-14 left-1/2 -translate-x-1/2 z-50">
+  <div className="absolute top-14 left-1/2 -translate-x-1/2 z-[60]">
     <DatePicker
       selected={selectedDate}
       onSelect={handleDateSelect} 

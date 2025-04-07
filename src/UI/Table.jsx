@@ -5,7 +5,7 @@ const Table = ({tableHeaders, data}) => {
   console.log('Table props:', { tableHeaders, data }); 
   
   return (
-    <div className="max-w-7xl mx-auto p-4 bg-white text-slate-900">
+    <div className="max-w-7xl mx-auto w-full p-4 bg-white text-slate-900">
       <div  className="mb-8">
           <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-600">
             <table className="w-full min-w-[640px] border-collapse relative ">
