@@ -30,3 +30,6 @@ color: oklch(87.2% 0.01 258.338) !important;
   color: white !important;
 }
 
+*{
+  box-sizing: border-box;
+}

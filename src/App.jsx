@@ -18,6 +18,12 @@ import PlayersPage from './Pages/PlayersPage'
 import PlayerProfile from './Pages/PlayerProfile'
 import HeadToHeadPage from './Pages/HeadToHeadPage'
 import HeadToHeadPlayer from './Pages/HeadToHeadPlayer'
+import HOF from './Pages/HOF'
+import VoteForHOF from './Pages/VoteForHOF'
+import LOLoginPage from './Pages/LOLoginPage'
+import SignUpPage from './Pages/SignUpPage'
+import NewsLetterPage from './Pages/NewsLetterPage'
+import PostSeasonPage from './Pages/PostSeasonPage'
 
 function App() {
 
@@ -29,6 +35,8 @@ function App() {
       <Route path='/calendar' element={<CalenderPage/>}/>
       <Route path='/stats' element={<StatsPage/>}/> 
       <Route path='/standings' element={<StandingsPage/>}/>
+      <Route path='/newsletters' element={<NewsLetterPage/>}/>
+      <Route path='/post-season' element={<PostSeasonPage/>}/>
 
       <Route path='/players' element={<PlayersPage/>}/>
       <Route path='/player/:name' element={<PlayerProfile/>}/>
@@ -49,6 +57,11 @@ function App() {
       <Route path="/top-100-teams" element={<TopTeams title={"Top 100 Teams"}/>}/>
       <Route path="/top-100-tournament-teams" element={<TopTeams title={"Top 100 Tournament Teams"}/>}/>
 
+      <Route path="/hall-of-fame" element={<HOF/>}/>
+      <Route path="/vote" element={<VoteForHOF/>}/>
+
+      <Route path="/signin" element={<LOLoginPage/>}/>
+      <Route path="/signup" element={<SignUpPage/>}/>
     </Routes>
     <Footer/>
     </>

@@ -243,6 +243,9 @@ const HeadToHeadPlayer = ({ title }) => {
                   <h1 className="text-4xl font-semibold">Player Name</h1>
                   <p className="text-gray-500 text-base">Team Name</p>
                 </div>
+                <div>
+                    <h2 className="text-4xl  text-blue font-bold">10</h2>
+                </div>
               </div>
               <div className="leading-none flex justify-center items-center flex-col text-xl font-bold text-red">
                 <p>HEAD</p>
@@ -256,6 +259,10 @@ const HeadToHeadPlayer = ({ title }) => {
                 <div className="">
                   <h1 className="text-4xl font-semibold">Player Name</h1>
                   <p className="text-gray-500 text-base">Team Name</p>
+
+                </div>
+                <div>
+                    <h2 className="text-4xl  text-blue font-bold">10</h2>
                 </div>
               </div>
             </div>
