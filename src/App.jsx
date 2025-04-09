@@ -24,6 +24,8 @@ import LOLoginPage from './Pages/LOLoginPage'
 import SignUpPage from './Pages/SignUpPage'
 import NewsLetterPage from './Pages/NewsLetterPage'
 import PostSeasonPage from './Pages/PostSeasonPage'
+import Shop from './Pages/Shop'
+import WeeklyScoresPage from './Pages/WeeklyScoresPage'
 
 function App() {
 
@@ -37,6 +39,8 @@ function App() {
       <Route path='/standings' element={<StandingsPage/>}/>
       <Route path='/newsletters' element={<NewsLetterPage/>}/>
       <Route path='/post-season' element={<PostSeasonPage/>}/>
+      <Route path='/shop' element={<Shop/>}/>
+      <Route path='/weekly-scores' element={<WeeklyScoresPage/>}/>
 
       <Route path='/players' element={<PlayersPage/>}/>
       <Route path='/player/:name' element={<PlayerProfile/>}/>
