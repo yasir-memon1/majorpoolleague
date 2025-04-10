@@ -1,10 +1,17 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import MatchView from "./MatchView";
 
 const MatchResults = ({ matches }) => {
+  const [isViewingMatch, setIsViewingMatch] = useState(false)
+  const closePopup = ()=>{
+    setIsViewingMatch(false)
+  }
   return (
-    <div className="grid grid-cols-1    gap-4">
+    <div className="grid grid-cols-1  w-full   gap-4">
+      {isViewingMatch && <MatchView close={closePopup} match={matches[0]}/>}
       {matches.map((match, index) => (
-        <div className="flex justify-center group items-center w-full flex-1 gap-0">
+        <div className="flex justify-center group items-center w-full flex-1 gap-0" onClick={() => setIsViewingMatch(true)}>
           <div
             key={index}
             className={`

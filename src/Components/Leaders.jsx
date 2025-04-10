@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import DividingHeader from "../UI/DividingHeader";
 import Leader from "./Leader";
 
-const Leaders = ({ leaders }) => {
+const Leaders = ({ leaders, title1="Men", title2="Women" }) => {
   return (
     <div className="w-full grid grid-cols-2 gap-12">
-      <Leader leader={leaders.men} title={"Men"}/>
-      <Leader leader={leaders.women} title={"Women"}/>
+      <Leader leader={leaders.men} title={title1}/>
+      <Leader leader={leaders.women} title={title2}/>
     </div>
   );
 };

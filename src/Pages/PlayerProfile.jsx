@@ -1,3 +1,5 @@
+import Accolades from "../Components/Accolades";
+import Leaders from "../Components/Leaders";
 import DividingHeader from "../UI/DividingHeader";
 import Page from "../UI/Page";
 import Table from "../UI/Table";
@@ -76,6 +78,274 @@ const Headers = [
   },
 ]
 
+  const leaders = {
+    men: {
+      pr: {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    points: {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    scoringPct: {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "ppa": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "wins": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    winPct: {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "10-0": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    dbro: {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "b/r": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "8bb": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "ctc": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "matchWins": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "matchWinPerc": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "sweep": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "wsl": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "ma": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "oma": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "mip": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "gamesBroke": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    },
+    "gamesRacked": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: pfpPlaceholder,
+        team: "Team name",
+        position: 12
+    }
+    },
+    women: {
+        pr: {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        points: {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        scoringPct: {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "ppa": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "wins": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        winPct: {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "10-0": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        dbro: {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "b/r": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "8bb": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "ctc": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "matchWins": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "matchWinPerc": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "sweep": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "wsl": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "ma": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "oma": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "mip": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "gamesBroke": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        },
+        "gamesRacked": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: pfpPlaceholder,
+            team: "Team name"
+        }
+    }
+  }
+
+
 const PlayerData = [
   { name: "John Doe", v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
   { name: "Jane Smith", v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
@@ -118,8 +388,22 @@ const PlayerProfile = () => {
           </ul>
         </div>
         <div className="mt-4 px-12">
-        <DividingHeader header={"Stats"}/>
+        <DividingHeader header={"Career Totals"}/>
         <Table tableHeaders={Headers} data={PlayerData}/>
+        <DividingHeader header={"All Time Totals"}/>
+        <Table tableHeaders={Headers} data={PlayerData}/>
+        <DividingHeader header={"8-Ball Stats"}/>
+        <Table tableHeaders={Headers} data={PlayerData}/>
+        <DividingHeader header={"9-Ball Stats"}/>
+        <Table tableHeaders={Headers} data={PlayerData}/>
+        <DividingHeader header={"10-Ball Stats"}/>
+        <Table tableHeaders={Headers} data={PlayerData}/>
+        <DividingHeader header={"Scotch Stats"}/>
+        <Table tableHeaders={Headers} data={PlayerData}/>
+        <DividingHeader header={"Accolades"}/>
+        <Accolades/>
+        <DividingHeader header={"Leaders"}/>
+        <Leaders leaders={leaders} title1="Player Name" title2="Leaders"/>
         </div>
 
         

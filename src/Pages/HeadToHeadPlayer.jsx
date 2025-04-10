@@ -1,3 +1,4 @@
+import MatchResults from "../Components/MatchResults";
 import DividingHeader from "../UI/DividingHeader";
 import Page from "../UI/Page";
 import Table from "../UI/Table";
@@ -7,6 +8,10 @@ const Headers = [
   {
     name: "Player Name",
   },
+  {
+    name: "Opponent",
+  },
+
   {
     name: "V",
     desc: "Victories",
@@ -77,6 +82,7 @@ const HeadToHeadPlayer = ({ title }) => {
   const playerData = [
     {
       name: "John Doe",
+      opponent: "John Doe",
       v: 10,
       pr: 5,
       points: 50,
@@ -94,140 +100,32 @@ const HeadToHeadPlayer = ({ title }) => {
       ma: 15,
       m: 10,
     },
+    
+  ];
+  
+  const matches = [
     {
-      name: "Jane Smith",
-      v: 8,
-      pr: 4,
-      points: 40,
-      pa: 18,
-      scoring: "70%",
-      ppa: 2.2,
-      w: 6,
-      l: 3,
-      winpct: "66%",
-      thirties: 2,
-      eightball: 0,
-      breakrun: 1,
-      tenzeros: 0,
-      winstrk: 3,
-      ma: 12,
-      m: 8,
+      id: 1,
+      team1: { name: "Wicked Crew", score: 84, image: pfpPlaceholder },
+      team2: { name: "Balls Matter", score: 58, image: pfpPlaceholder },
     },
     {
-      name: "John Doe",
-      v: 10,
-      pr: 5,
-      points: 50,
-      pa: 20,
-      scoring: "75%",
-      ppa: 2.5,
-      w: 8,
-      l: 2,
-      winpct: "80%",
-      thirties: 3,
-      eightball: 1,
-      breakrun: 2,
-      tenzeros: 1,
-      winstrk: 5,
-      ma: 15,
-      m: 10,
+      id: 2,
+      team1: { name: "Lucky 13", score: 67, image: pfpPlaceholder },
+      team2: { name: "Tempe Elks", score: 51, image: pfpPlaceholder },
     },
     {
-      name: "Jane Smith",
-      v: 8,
-      pr: 4,
-      points: 40,
-      pa: 18,
-      scoring: "70%",
-      ppa: 2.2,
-      w: 6,
-      l: 3,
-      winpct: "66%",
-      thirties: 2,
-      eightball: 0,
-      breakrun: 1,
-      tenzeros: 0,
-      winstrk: 3,
-      ma: 12,
-      m: 8,
+      id: 3,
+      team1: { name: "Get Lucky", score: 66, image: pfpPlaceholder },
+      team2: { name: "Those People", score: 73, image: pfpPlaceholder },
     },
     {
-      name: "John Doe",
-      v: 10,
-      pr: 5,
-      points: 50,
-      pa: 20,
-      scoring: "75%",
-      ppa: 2.5,
-      w: 8,
-      l: 2,
-      winpct: "80%",
-      thirties: 3,
-      eightball: 1,
-      breakrun: 2,
-      tenzeros: 1,
-      winstrk: 5,
-      ma: 15,
-      m: 10,
-    },
-    {
-      name: "Jane Smith",
-      v: 8,
-      pr: 4,
-      points: 40,
-      pa: 18,
-      scoring: "70%",
-      ppa: 2.2,
-      w: 6,
-      l: 3,
-      winpct: "66%",
-      thirties: 2,
-      eightball: 0,
-      breakrun: 1,
-      tenzeros: 0,
-      winstrk: 3,
-      ma: 12,
-      m: 8,
-    },
-    {
-      name: "John Doe",
-      v: 10,
-      pr: 5,
-      points: 50,
-      pa: 20,
-      scoring: "75%",
-      ppa: 2.5,
-      w: 8,
-      l: 2,
-      winpct: "80%",
-      thirties: 3,
-      eightball: 1,
-      breakrun: 2,
-      tenzeros: 1,
-      winstrk: 5,
-      ma: 15,
-      m: 10,
-    },
-    {
-      name: "Jane Smith",
-      v: 8,
-      pr: 4,
-      points: 40,
-      pa: 18,
-      scoring: "70%",
-      ppa: 2.2,
-      w: 6,
-      l: 3,
-      winpct: "66%",
-      thirties: 2,
-      eightball: 0,
-      breakrun: 1,
-      tenzeros: 0,
-      winstrk: 3,
-      ma: 12,
-      m: 8,
+      id: 4,
+      team1: { name: "A*R*T", score: 66, image: pfpPlaceholder },
+      team2: { name: "Chalk Dirty to Me", score: 77, image: pfpPlaceholder },
     },
   ];
+  
   console.log(Headers);
   return (
     <Page>
@@ -267,6 +165,8 @@ const HeadToHeadPlayer = ({ title }) => {
               </div>
             </div>
             <DividingHeader header={"RECENT MATCHES"} />
+            <MatchResults matches={matches} />
+            <DividingHeader header={"STATISTICS"} />
             <Table tableHeaders={Headers} data={playerData} />
           </div>
         </div>

@@ -209,60 +209,126 @@ const playerData = [
 
   const leaders = {
     men: {
-        pr: {
-            score: 5480,
-            name: "Fred Stanfield",
-            image: placeHolder,
-            team: "Team name"
-        },
-        points: {
-            score: 5480,
-            name: "Fred Stanfield",
-            image: placeHolder,
-            team: "Team name"
-        },
-        win: {
-            score: 5480,
-            name: "Fred Stanfield",
-            image: placeHolder,
-            team: "Team name"
-        },
-        "30s": {
-            score: 5480,
-            name: "Fred Stanfield",
-            image: placeHolder,
-            team: "Team name"
-        },
-        "8bb": {
-            score: 5480,
-            name: "Fred Stanfield",
-            image: placeHolder,
-            team: "Team name"
-        },
-        br: {
-            score: 5480,
-            name: "Fred Stanfield",
-            image: placeHolder,
-            team: "Team name"
-        },
-        "10-0s": {
-            score: 5480,
-            name: "Fred Stanfield",
-            image: placeHolder,
-            team: "Team name"
-        },
-        ma: {
-            score: 5480,
-            name: "Fred Stanfield",
-            image: placeHolder,
-            team: "Team name"
-        },
-        mip: {
-            score: 5480,
-            name: "Fred Stanfield",
-            image: placeHolder,
-            team: "Team name"
-        }
+      pr: {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    points: {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    scoringPct: {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "ppa": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "wins": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    winPct: {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "10-0": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    dbro: {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "b/r": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "8bb": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "ctc": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "matchWins": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "matchWinPerc": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "sweep": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "wsl": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "ma": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "oma": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "mip": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "gamesBroke": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    },
+    "gamesRacked": {
+        score: 5480,
+        name: "Fred Stanfield",
+        image: placeHolder,
+        team: "Team name"
+    }
     },
     women: {
         pr: {
@@ -277,13 +343,43 @@ const playerData = [
             image: placeHolder,
             team: "Team name"
         },
-        win: {
+        scoringPct: {
             score: 5480,
             name: "Fred Stanfield",
             image: placeHolder,
             team: "Team name"
         },
-        "30s": {
+        "ppa": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: placeHolder,
+            team: "Team name"
+        },
+        "wins": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: placeHolder,
+            team: "Team name"
+        },
+        winPct: {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: placeHolder,
+            team: "Team name"
+        },
+        "10-0": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: placeHolder,
+            team: "Team name"
+        },
+        dbro: {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: placeHolder,
+            team: "Team name"
+        },
+        "b/r": {
             score: 5480,
             name: "Fred Stanfield",
             image: placeHolder,
@@ -295,25 +391,61 @@ const playerData = [
             image: placeHolder,
             team: "Team name"
         },
-        br: {
+        "ctc": {
             score: 5480,
             name: "Fred Stanfield",
             image: placeHolder,
             team: "Team name"
         },
-        "10-0s": {
+        "matchWins": {
             score: 5480,
             name: "Fred Stanfield",
             image: placeHolder,
             team: "Team name"
         },
-        ma: {
+        "matchWinPerc": {
             score: 5480,
             name: "Fred Stanfield",
             image: placeHolder,
             team: "Team name"
         },
-        mip: {
+        "sweep": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: placeHolder,
+            team: "Team name"
+        },
+        "wsl": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: placeHolder,
+            team: "Team name"
+        },
+        "ma": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: placeHolder,
+            team: "Team name"
+        },
+        "oma": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: placeHolder,
+            team: "Team name"
+        },
+        "mip": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: placeHolder,
+            team: "Team name"
+        },
+        "gamesBroke": {
+            score: 5480,
+            name: "Fred Stanfield",
+            image: placeHolder,
+            team: "Team name"
+        },
+        "gamesRacked": {
             score: 5480,
             name: "Fred Stanfield",
             image: placeHolder,

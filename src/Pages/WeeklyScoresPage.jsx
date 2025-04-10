@@ -62,12 +62,12 @@ const WeeklyScoresPage = () => {
             </div>
 
             <div className="flex flex-col gap-4">
-              <div className="grid grid-cols-1 gap-12">
+              <div className="grid grid-cols-1 gap-12 ">
                 <div className="min-h-36 flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
                   <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
                     MONDAY
                   </div>
-                  <div className="flex-1 w-full flex justify-center py-6 gap-4 flex-col items-center">
+                  <div className="flex-1 w-full px-6 flex justify-center py-6 gap-4 flex-col items-center">
                     <DividingHeader header={"Division-1"} />
                     <MatchResults matches={matches} />
                   </div>
@@ -80,7 +80,7 @@ const WeeklyScoresPage = () => {
                   <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
                     TUESDAY
                   </div>
-                  <div className="flex-1 w-full flex justify-center py-6 gap-4 flex-col items-center">
+                  <div className="flex-1 w-full px-6 flex justify-center py-6 gap-4 flex-col items-center">
                     <DividingHeader header={"Division-1"} />
                     <MatchResults matches={matches} />
                   </div>
@@ -93,7 +93,7 @@ const WeeklyScoresPage = () => {
                   <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
                     WEDNESDAY
                   </div>
-                  <div className="flex-1 w-full flex justify-center py-6 gap-4 flex-col items-center">
+                  <div className="flex-1 w-full px-6 flex justify-center py-6 gap-4 flex-col items-center">
                     <DividingHeader header={"Division-1"} />
                     <MatchResults matches={matches} />
                   </div>
@@ -106,7 +106,7 @@ const WeeklyScoresPage = () => {
                   <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
                     THURSDAY
                   </div>
-                  <div className="flex-1 w-full flex justify-center py-6 gap-4 flex-col items-center">
+                  <div className="flex-1 w-full px-6 flex justify-center py-6 gap-4 flex-col items-center">
                     <DividingHeader header={"Division-1"} />
                     <MatchResults matches={matches} />
                   </div>
@@ -119,7 +119,7 @@ const WeeklyScoresPage = () => {
                   <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
                     FRIDAY
                   </div>
-                  <div className="flex-1 w-full flex justify-center py-6 gap-4 flex-col items-center">
+                  <div className="flex-1 w-full px-6 flex justify-center py-6 gap-4 flex-col items-center">
                     <DividingHeader header={"Division-1"} />
                     <MatchResults matches={matches} />
                   </div>
@@ -132,7 +132,7 @@ const WeeklyScoresPage = () => {
                   <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
                     SATURDAY
                   </div>
-                  <div className="flex-1 w-full flex justify-center py-6 gap-4 flex-col items-center">
+                  <div className="flex-1 w-full px-6 flex justify-center py-6 gap-4 flex-col items-center">
                     <DividingHeader header={"Division-1"} />
                     <MatchResults matches={pending_matches} />
                   </div>
@@ -145,7 +145,7 @@ const WeeklyScoresPage = () => {
                   <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
                     SUNDAY
                   </div>
-                  <div className="flex-1 w-full flex justify-center py-6 gap-4 flex-col items-center">
+                  <div className="flex-1 w-full px-6 flex justify-center py-6 gap-4 flex-col items-center">
                     <DividingHeader header={"Division-1"} />
                     <MatchResults matches={pending_matches} />
                   </div>
