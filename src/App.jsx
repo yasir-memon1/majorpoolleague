@@ -26,6 +26,8 @@ import NewsLetterPage from './Pages/NewsLetterPage'
 import PostSeasonPage from './Pages/PostSeasonPage'
 import Shop from './Pages/Shop'
 import WeeklyScoresPage from './Pages/WeeklyScoresPage'
+import Division from './Pages/Division'
+import AboutPage from './Pages/About'
 
 function App() {
 
@@ -41,6 +43,8 @@ function App() {
       <Route path='/post-season' element={<PostSeasonPage/>}/>
       <Route path='/shop' element={<Shop/>}/>
       <Route path='/weekly-scores' element={<WeeklyScoresPage/>}/>
+      <Route path='/division/:name' element={<Division/>}/>
+      <Route path='/about' element={<AboutPage/>}/>
 
       <Route path='/players' element={<PlayersPage/>}/>
       <Route path='/player/:name' element={<PlayerProfile/>}/>

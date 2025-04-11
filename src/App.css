@@ -10,3 +10,27 @@
 .section-divider-blue::before{
     background-color: #067dd7 !important;
 }
+
+.no-select {
+    user-select: none;
+    -webkit-user-drag: none; /* Prevent dragging on WebKit browsers */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+  }
+
+  .home-transition {
+    transition: bottom 500ms ease-in-out, opacity 500ms ease-in-out;
+  }
+  
+  /* Initial state (before transition) */
+  .home-transition.initial {
+    bottom: 50px;
+    opacity: 0;
+  }
+  
+  /* Final state (after transition) */
+  .home-transition.active {
+    bottom: auto;
+    opacity: 1;
+  }

@@ -1,82 +1,304 @@
 import Accolades from "../Components/Accolades";
 import Leaders from "../Components/Leaders";
+import ShopItem from "../Components/ShopItem";
 import DividingHeader from "../UI/DividingHeader";
 import Page from "../UI/Page";
 import Table from "../UI/Table";
 import coverPlaceholder from "../assets/league-placeholder.png";
 import pfpPlaceholder from "../assets/player-placeholder.png";
 import {Link} from "react-router-dom"
+import shirtPlaceholder from "../assets/pool-placeholder.jpg";
+
 
 
 const Headers = [
-  {
-      name: "Player Name",
-  },
-  {
-      name: "V",
-      desc: "Victories"
-  },
-  {
-      name: "PR",
-      desc: "PR"
-  },
-  {
-      name: "Points",
-      desc: "Points"
-  },
-  {
-      name: "PA",
-      desc: "PA"
-  },
-  {
-      name: "Scoring%",
-      desc: "Score"
-  },
-  {
-      name: "P/PA",
-      desc: "P/PA"
-  },
-  {
-      name: "W",
-      desc: "W"
-  },
-  {
-      name: "L",
-      desc: "L"
-  },
-  {
-      name: "Win %",
-      desc: "Win %"
-  },
-  {
-      name: "30s",
-      desc: "30s"
-  },
-  {
-      name: "8 Ball Break",
-      desc: "8 Ball Break"
-  },
-  {
-      name: "Break run",
-      desc: "Break run"
-  },
-  {
-      name: "10-0s",
-      desc: "10-0s"
-  },
-  {
-      name: "Win Strk",
-      desc: "Win Strk"
-  },
-  {
-      name: "MA",
-      desc: "MA"
-  },
-  {
-      name: "M",
-      desc: "M"
-  },
+  
+    {
+        name: "R",
+        desc: "Victories",
+      },
+      {
+        name: "PR",
+        desc: "PR",
+      },
+      {
+        name: "Points",
+        desc: "Points",
+      },
+      {
+        name: "PA",
+        desc: "PA",
+      },
+      {
+        name: "Scoring%",
+        desc: "Score",
+      },
+      {
+        name: "P/PA",
+        desc: "P/PA",
+      },
+      {
+        name: "W",
+        desc: "W",
+      },
+      {
+        name: "L",
+        desc: "L",
+      },
+      {
+        name: "Win %",
+        desc: "Win %",
+      },
+      {
+        name: "10-0",
+        desc: "10-0",
+      },
+      {
+        name: "DB/RO",
+        desc: "DB/RO",
+      },
+      {
+        name: "B/R",
+        desc: "Break run",
+      },
+      {
+        name: "8BB",
+        desc: "8BB",
+      },
+      {
+        name: "8BB/S",
+        desc: "8BB/S",
+      },
+      {
+        name: "Early 8",
+        desc: "Early 8",
+      },
+      {
+        name: "S8",
+        desc: "S8",
+      },
+      {
+        name: "WP",
+        desc: "WP",
+      },
+      {
+        name: "CtC",
+        desc: "CtC",
+      },
+      {
+        name: "Match Wins",
+        desc: "Match Wins",
+      },
+      {
+        name: "Match Losses",
+        desc: "Match Losses",
+      },
+      {
+        name: "Match Winning &",
+        desc: "Match Winning &",
+      },
+      {
+        name: "Sweep",
+        desc: "Sweep",
+      },
+      {
+        name: "MA",
+        desc: "MA",
+      },
+      {
+        name: "OMA",
+        desc: "OMA",
+      },
+      {
+        name: "O ATMA",
+        desc: "O ATMA",
+      },
+      {
+        name: "AT MA*",
+        desc: "AT MA*",
+      },
+      {
+        name: "MIP",
+        desc: "MIP",
+      },
+      {
+        name: "Games Broke",
+        desc: "Games Broke",
+      },
+      {
+        name: "Games Racked",
+        desc: "Games Racked",
+      },
+      {
+        name: "Total Matches",
+        desc: "Total Matches",
+      },
 ]
+const Ball9Header = [
+    {
+        name: "Wins",
+        desc: "Wins",
+      },
+      {
+        name: "Losses",
+        desc: "Losses",
+      },
+      {
+        name: "Winning &",
+        desc: "Winning &",
+      },
+      {
+        name: "Match Wins",
+        desc: "Match Wins",
+      },
+      {
+        name: "Match Winning %",
+        desc: "Match Winning %",
+      },
+      {
+        name: "Sweep",
+        desc: "Sweep",
+      },
+      {
+        name: "W/S/L",
+        desc: "W/S/L",
+      },
+      {
+        name: "Games Broke",
+        desc: "Games Broke",
+      },
+      {
+        name: "Games Racked",
+        desc: "Games Racked",
+      },
+    ]
+const scotchHeaders = [
+    {
+        name: "Teammate",
+        desc: "Teammate",
+      },
+      {
+        name: "R",
+        desc: "R",
+      },
+      {
+        name: "PR",
+        desc: "PR",
+      },
+      {
+        name: "Points",
+        desc: "Points",
+      },
+      {
+        name: "PA",
+        desc: "PA",
+      },
+      {
+        name: "Scoring %",
+        desc: "Scoring %",
+      },
+      {
+        name: "P/PA",
+        desc: "P/PA",
+      },
+      {
+        name: "W",
+        desc: "W",
+      },
+      {
+        name: "L",
+        desc: "L",
+      },
+      {
+        name: "Win %",
+        desc: "Win %",
+      },
+      {
+        name: "10-0",
+        desc: "10-0",
+      },
+      {
+        name: "DBRO",
+        desc: "DBRO",
+      },
+      {
+        name: "B/R",
+        desc: "B/R",
+      },
+      {
+        name: "8BB",
+        desc: "8BB",
+      },
+      {
+        name: "8BB/S",
+        desc: "8BB/S",
+      },
+      {
+        name: "Early 8",
+        desc: "Early 8",
+      },
+      {
+        name: "S8",
+        desc: "S8",
+      },
+      {
+        name: "WP",
+        desc: "WP",
+      },
+      {
+        name: "CtC",
+        desc: "CtC",
+      },
+      {
+        name: "Match Wins",
+        desc: "Match Wins",
+      },
+      {
+        name: "Match Losses",
+        desc: "Match Losses",
+      },
+      {
+        name: "Match Winning %",
+        desc: "Match Winning %",
+      },
+      {
+        name: "Sweep",
+        desc: "Sweep",
+      },
+      {
+        name: "MA",
+        desc: "MA",
+      },
+      {
+        name: "OMA",
+        desc: "OMA",
+      },
+      {
+        name: "O ATMA",
+        desc: "O ATMA",
+      },
+      {
+        name: "AT MA*",
+        desc: "AT MA*",
+      },
+      {
+        name: "MIP",
+        desc: "MIP",
+      },
+      {
+        name: "Games Broke",
+        desc: "Games Broke",
+      },
+      {
+        name: "Games Racked",
+        desc: "Games Racked",
+      },
+      {
+        name: "Total Matches",
+        desc: "Total Matches",
+      },
+]
+
 
   const leaders = {
     men: {
@@ -347,14 +569,8 @@ const Headers = [
 
 
 const PlayerData = [
-  { name: "John Doe", v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
-  { name: "Jane Smith", v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
-  { name: "John Doe", v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
-  { name: "Jane Smith", v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
-  { name: "John Doe", v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
-  { name: "Jane Smith", v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
-  { name: "John Doe", v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
-  { name: "Jane Smith", v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
+  {  v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
+ 
 ]
 const PlayerProfile = () => {
   return (
@@ -388,6 +604,13 @@ const PlayerProfile = () => {
           </ul>
         </div>
         <div className="mt-4 px-12">
+        <DividingHeader header={"T-Shirts"}/>
+        <div className="grid grid-cols-3 gap-12 mx-6 my-10">
+              <ShopItem name={"Pool Shirt Black"} price={"34.99"} image={shirtPlaceholder}/>
+              <ShopItem name={"Pool Shirt Black"} price={"34.99"} image={shirtPlaceholder}/>
+              <ShopItem name={"Pool Shirt Black"} price={"34.99"} image={shirtPlaceholder}/>
+
+            </div>
         <DividingHeader header={"Career Totals"}/>
         <Table tableHeaders={Headers} data={PlayerData}/>
         <DividingHeader header={"All Time Totals"}/>
@@ -395,11 +618,11 @@ const PlayerProfile = () => {
         <DividingHeader header={"8-Ball Stats"}/>
         <Table tableHeaders={Headers} data={PlayerData}/>
         <DividingHeader header={"9-Ball Stats"}/>
-        <Table tableHeaders={Headers} data={PlayerData}/>
+        <Table tableHeaders={Ball9Header} data={PlayerData}/>
         <DividingHeader header={"10-Ball Stats"}/>
-        <Table tableHeaders={Headers} data={PlayerData}/>
+        <Table tableHeaders={Ball9Header} data={PlayerData}/>
         <DividingHeader header={"Scotch Stats"}/>
-        <Table tableHeaders={Headers} data={PlayerData}/>
+        <Table tableHeaders={scotchHeaders} data={PlayerData}/>
         <DividingHeader header={"Accolades"}/>
         <Accolades/>
         <DividingHeader header={"Leaders"}/>

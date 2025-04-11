@@ -8,12 +8,10 @@ const Headers = [
   {
     name: "Player Name",
   },
-  {
-    name: "Opponent",
-  },
+
 
   {
-    name: "V",
+    name: "R",
     desc: "Victories",
   },
   {
@@ -49,33 +47,90 @@ const Headers = [
     desc: "Win %",
   },
   {
-    name: "30s",
-    desc: "30s",
+    name: "10-0",
+    desc: "10-0",
   },
   {
-    name: "8 Ball Break",
-    desc: "8 Ball Break",
+    name: "DB/RO",
+    desc: "DB/RO",
   },
   {
-    name: "Break run",
+    name: "B/R",
     desc: "Break run",
   },
   {
-    name: "10-0s",
-    desc: "10-0s",
+    name: "8BB",
+    desc: "8BB",
   },
   {
-    name: "Win Strk",
-    desc: "Win Strk",
+    name: "8BB/S",
+    desc: "8BB/S",
+  },
+  {
+    name: "Early 8",
+    desc: "Early 8",
+  },
+  {
+    name: "S8",
+    desc: "S8",
+  },
+  {
+    name: "WP",
+    desc: "WP",
+  },
+  {
+    name: "CtC",
+    desc: "CtC",
+  },
+  {
+    name: "Match Wins",
+    desc: "Match Wins",
+  },
+  {
+    name: "Match Losses",
+    desc: "Match Losses",
+  },
+  {
+    name: "Match Winning &",
+    desc: "Match Winning &",
+  },
+  {
+    name: "Sweep",
+    desc: "Sweep",
   },
   {
     name: "MA",
     desc: "MA",
   },
   {
-    name: "M",
-    desc: "M",
+    name: "OMA",
+    desc: "OMA",
   },
+  {
+    name: "O ATMA",
+    desc: "O ATMA",
+  },
+  {
+    name: "AT MA*",
+    desc: "AT MA*",
+  },
+  {
+    name: "MIP",
+    desc: "MIP",
+  },
+  {
+    name: "Games Broke",
+    desc: "Games Broke",
+  },
+  {
+    name: "Games Racked",
+    desc: "Games Racked",
+  },
+  {
+    name: "Total Matches",
+    desc: "Total Matches",
+  },
+  
 ];
 
 const HeadToHeadPlayer = ({ title }) => {

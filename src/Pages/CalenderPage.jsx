@@ -98,6 +98,17 @@ const CalenderPage = () => {
             </div>
           </div>
           <div className="w-full  flex justify-center items-center flex-col gap-4 ">
+          <div className="min-h-36 w-full flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
+              <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
+                May 4, 2025
+              </div>
+              <div className="flex-1 flex justify-center py-6 gap-4 flex-col items-center">
+                <div className="flex flex-col  justify-center items-center mx-6 my-10">
+                  <h1 className="text-2xl text-blue font-semibold">Happy Birthday</h1>
+                  <h1 className="text-3xl text-blue font-semibold"> Player Name</h1>
+                </div>
+              </div>
+            </div>
             <div className="min-h-36 w-full flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
               <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
                 May, 2025

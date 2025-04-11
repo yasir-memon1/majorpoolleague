@@ -194,6 +194,8 @@ const StandingsPage = ()=>{
     const [division, setDivision] = useState("MLP")
     const [season, setSeason] = useState("Regular Season")
     const [league, setLeague] = useState(null)
+    const [type, setType] = useState("players")
+
     const handleToggle = (dropdownName) => {
         setOpenDropdown((prev) => (prev === dropdownName ? null : dropdownName));
       };
@@ -226,6 +228,10 @@ const StandingsPage = ()=>{
         <div className="max-w-7xl  mx-auto p-4 bg-white text-slate-900">
           <div className="flex flex-col w-full gap-1">
             <PageHeader heading="Standings" />
+            <div className="flex justify-start items-center gap-3">
+                <button className={`text-2xl font-semibold ${type === "teams" ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{type !== "teams" && setType("teams"); setGender({male: true, female: true})}}>Teams</button>
+                <button className={`text-2xl font-semibold ${type === "players" ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{type !== "players" && setType("players"); setGender({male: true, female: true})}}>Players</button>
+            </div>
            
             <div className="mt-5">
             <CustomDatePicker/>

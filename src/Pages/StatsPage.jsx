@@ -2,8 +2,12 @@ import { useState } from "react"
 import Page from "../UI/Page"
 import PageHeader from "../UI/PageHeader"
 import Table from "../UI/Table"
+import placeHolder from "../assets/player-placeholder.png"
+import teamPlaceholder from "../assets/league-placeholder (1).png"
 import Dropdown from "../UI/Dropdown"
 import { set } from "date-fns"
+import DividingHeader from "../UI/DividingHeader"
+import POW from "../Components/POW"
 const PLAYER_HEADERS = [
     {
         name: "Player",
@@ -255,12 +259,173 @@ const StatsPage = ()=>{
             { name: "Jane Smith", v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
           ]
       console.log(Headers)
+
+      
+        const pow = {
+          men: [
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+          ],
+          women:  [
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+            {
+                name: "Fred Stanfield",
+                image: placeHolder,
+                team: "Team name"
+            },
+          ]
+        }
     return (
         <Page>
       <div className="bg-gray-100 py-10">
         <div className="max-w-7xl  mx-auto p-4 bg-white text-slate-900">
           <div className="flex flex-col w-full gap-1">
             <PageHeader heading="Statistics" />
+            <DividingHeader header="Players of the Week" />
+            <POW pow={pow} />
+            <DividingHeader header="Statistics" />
             <div className="flex justify-start items-center gap-3">
                 <button className={`text-2xl font-semibold ${type === "teams" ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{type !== "teams" && setType("teams"); setGender({male: true, female: true})}}>Teams</button>
                 <button className={`text-2xl font-semibold ${type === "players" ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{type !== "players" && setType("players"); setGender({male: true, female: true})}}>Players</button>

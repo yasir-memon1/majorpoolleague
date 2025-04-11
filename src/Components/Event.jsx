@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Event = ({image, name, startDate,startTime, endDate, endTime, details})=>{
     return(
         <div className="flex flex-col gap-4 justify-center group rounded-2xl bg-white shadow-lg p-4 items-center border border-gray-300">
@@ -8,7 +10,7 @@ const Event = ({image, name, startDate,startTime, endDate, endTime, details})=>{
                   />
                 </div>
                 <div className="flex flex-col gap-3 justify-start items-start w-full px-2">
-                  <h3 className="text-xl text-gray-900 font-semibold text-center w-full">{name}</h3>
+                  <Link to={"/division/name"} className="text-xl text-gray-900 font-semibold text-center w-full">{name}</Link>
                   {/* <h2 className="text-3xl font-bold text-gray-900">${price}</h2> */}
                   <hr className="w-full border-gray-300 "></hr>
                   <div className="flex flex-row justify-between w-full items-start">
