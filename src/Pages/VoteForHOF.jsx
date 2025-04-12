@@ -41,7 +41,7 @@ const VoteForHOF = () => {
             <div>
               <PageHeader heading={"Vote for Hall Of Fame"} />
             </div>
-            <p className="text-gray-500 text-base text-justify">
+            <p className="text-gray-500 text-sm sm:text-base text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
               repellat. Lorem ipsum dolor, sit amet consectetur adipisicing
               elit. Accusamus voluptatibus vero molestiae, doloribus architecto
@@ -72,14 +72,14 @@ const VoteForHOF = () => {
             />
             <label
               htmlFor={`player-${player.id}`}
-              className={`${checkedPlayers.some((p) => (p.id === player.id)) ? "bg-blue hover:bg-[#1094F9] text-white hover:text-gray-200" : "bg:white hover:bg-gray-50  text-gray-500 hover:text-gray-600"} inline-flex duration-200 group items-center justify-between w-full p-5   border-2 border-gray-200  cursor-pointer    hover:text-gray-600   hover:bg-gray-50 `}
+              className={`${checkedPlayers.some((p) => (p.id === player.id)) ? "bg-blue hover:bg-[#1094F9] text-white hover:text-gray-200" : "bg:white hover:bg-gray-50  text-gray-500 hover:text-gray-600"} inline-flex duration-200 group items-center justify-between w-full p-5   border-2 border-gray-200  cursor-pointer    hover:text-gray-600   `}
             >
               <div className="flex gap-4 justify-center items-center">
                 <div className="w-20 h-20 flex justify-center items-center overflow-hidden rounded-full">
                 <img src={placeHolder}/>
                 </div>
-                <div>
-                <div className={`w-full  text-lg duration-200 font-semibold ${checkedPlayers.some((p) => (p.id === player.id)) ? "text-white" : "text-blue"}`}>{player.name}</div>
+                <div className={`${checkedPlayers.some((p) => (p.id === player.id)) ? "text-white" : "text-blue"}`}>
+                <div className={`w-full  text-lg duration-200 font-semibold `}>{player.name}</div>
                 <div className="w-full  text-base font-semibold">{player.team}</div>
                 <div className="w-full text-sm">{player.description}</div>
                 </div>

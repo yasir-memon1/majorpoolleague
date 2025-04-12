@@ -564,21 +564,21 @@ const PostSeasonPage = () => {
     <Page>
       <div className="bg-gray-100 py-10">
         <div className="max-w-7xl  mx-auto p-4 bg-white text-slate-900">
-          <div className="flex flex-col w-full gap-6">
+        <div className="flex flex-col w-full gap-3  md:gap-6">
             <PageHeader heading={"Post Season"} />
 
-            <img src={banner} className="w-2/3 mx-auto" />
+            <img src={banner} className=" w-full md:w-2/3 mx-auto" />
 
             <DividingHeader header={"Summer 2024 Championship"} />
 
-            <p className="text-gray-600 text-base text-justify">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               A big congratulations goes out to Steve Deluna, Kevin “Foogie”
               Ringlero, Darryl Davis & Anthony Begay of 3 NDNs N Dat Guy! They
               defeated Going for Three, We Own the Money, Coke Fueled Rage & the
               reigning champions Ohhh Those Guys twice to go 5-0 and become the
               AZPL Summer 2024 State Champions and win $4,000!
             </p>
-            <p className="text-gray-600 text-base text-justify">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               The Championships began on Thursday, August 29th at Dozer’s Grill
               with a blind draw scotch-doubles/singles tournament! If you
               haven’t been to Dozer’s you need to check it out! 20 7-foot
@@ -593,7 +593,7 @@ const PostSeasonPage = () => {
               victory and $180! 2nd took home $120 with BC Antonio and Esteban
               Eureste split $60 for 5th!
             </p>
-            <p className="text-gray-600 text-base text-justify">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               On Friday there were 4 different tournaments to play in! An
               8-ball, 9-ball & 10-ball singles tourneys as well as our own
               8-Ball Break & Run Derby. In the singles tourneys it was a race to
@@ -602,20 +602,20 @@ const PostSeasonPage = () => {
               finished in 3rd and won $100. Steve Deluna was in 4th with $80.
               Aric Thompson & Chris Navas tied for 5th and won $35 each.
             </p>
-            <p className="text-gray-600 text-base text-justify">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               The 9-Ball tourney had 14 players in it. Aric Thompson defeated
               Nate Holliday to take 1st place and win $140! Nate received $90
               for 2nd. Andrea “Double A” Berchtold of Daddy O’s fame finished
               3rd and won $50!
             </p>
-            <p className="text-gray-600 text-base text-justify">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               Twenty players signed up for 10-ball. Mike Sandoval won the hot
               seat but it was Sammy Martinez who defeated him twice for the
               victory and $150 for 1st place! Mike took home $115 for 2nd. Mike
               Chapa finished in 3rd and won $85. Fourth paid out $50 to Robert
               Berry!
             </p>
-            <p className="text-gray-600 text-base text-justify">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               In 8-Ball Break & Run Derby there were 28 participants! Leading
               the pack after the opening round was Bernardo Garcia & Robert
               Berry, both tied with 30 and Frank Caddell with 28. The cutoff was
@@ -630,7 +630,7 @@ const PostSeasonPage = () => {
               and win $70! Mike Chapa finished in 2nd and took home $40! Robert
               Berry took home $20 for 3rd place!
             </p>
-            <p className="text-gray-600 text-base text-justify">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               On Saturday Dozer’s opened their doors at 9am for us! The first
               teams didn’t start until 11am so there was lots of warm up time
               and breakfast too! Breakfast burritos and sandwiches! 46 teams
@@ -654,7 +654,7 @@ const PostSeasonPage = () => {
               finished 3-2. Coke Fueled Rage took 4th and $1,000 after going
               4-2.
             </p>
-            <p className="text-gray-600 text-base text-justify">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               In their first match the 3 NDNs N Dat Guy faced off against Going
               for Three. They shut them out 60-27 in 6. In their next match they
               played Daddy’s In-House champs We Own the Money. It didn’t start
@@ -695,7 +695,7 @@ const PostSeasonPage = () => {
               started playing in the league last season. Foogie went 9-2 with
               103 points scored for a 1.689 PR to earn team MVP honors!
             </p>
-            <p className="text-gray-600 text-base text-justify">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               On Sunday we also had the Third Elimination Bracket with the
               winner receiving $1,000 courtesy of Dozer’s Grill! Every team that
               lost twice on Saturday and the first two rounds Sunday went into
@@ -703,14 +703,14 @@ const PostSeasonPage = () => {
               teams returned to compete for a grand! Of those 22 it was Lucky
               Roll & Unholy Trinity who both won 4 and split it $500 a piece!
             </p>
-            <p className="text-gray-600 text-base text-justify">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               If you were unlucky enough to lose your first match on Sunday you
               fell into the “I Guarantee You’ll Play 2 on Sunday” bracket with
               the winner receiving a free season! No weekly dues for the entire
               season! 12 teams played in this bracket with No Name from
               Flagstaff pulling out the victory!
             </p>
-            <p className="text-gray-600 text-base text-justify">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               Overall MVP of the tournament goes to Jim Rigney of the 3 Blind
               Mice! He went 19-3 while scoring 206 points, allowing just 112 and
               shooting a 28.09 match average for a 3.883 Power Rating! Lou Smith
@@ -724,7 +724,7 @@ const PostSeasonPage = () => {
               Junkies was the most improved player shooting 4.71 points over his
               career match average!
             </p>
-            <p className="text-gray-600 text-base text-justify">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               Thanks to everyone who came out to Dozer’s Grill over the weekend!
               Saw some alumni over the weekend — Randy Jacob from the Long
               Shanks stopped by as did former champions Ralph Gibson of Old
@@ -738,7 +738,7 @@ const PostSeasonPage = () => {
               to each and every one of YOU for playing and being a part of the
               AZPL! Another amazing season in the books!
             </p>
-            <p className="text-gray-600 text-base text-justify">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               Our 62nd season begins the week of September 9th! We have
               divisions Sunday thru Thursday statewide! The AZPL State
               Championships will be January 2nd thru 5th and first place will be
@@ -747,15 +747,15 @@ const PostSeasonPage = () => {
 
             <DividingHeader header={"AZPL State Championship Weekend"} />
 
-            <div className="flex justify-center flex-col items-start    w-max mx-auto gap-4 ">
-              <h2 className="text-blue text-3xl font-semibold underline underline-offset-4">
-                Divisions forming across Arizona!
-              </h2>
+            <div className="flex justify-center flex-col items-start   w-full md:w-max mx-auto gap-4 ">
+            <h3 className="text-center text-xl mb-2 leading-tight sm:text-3xl font-semibold text-blue mt-3">
+            Divisions forming across Arizona!
+              </h3>
 
               <div className="overflow-hidden rounded-md mx-auto h-full flex justify-center items-center">
-                <img className="scale-[101%] h-full" src={poster} />
+                <img className="scale-[101%] mx-auto h-auto sm:w-auto w-2/3 sm:h-full" src={poster} />
               </div>
-              <h3 className="text-white bg-blue text-3xl mx-auto font-semibold px-4 py-2 rounded-md ">
+              <h3 className="text-center w-full text-xl sm:mb-2 leading-tight sm:text-3xl font-semibold text-blue mt-3">
                 GET STARTED TODAY!
               </h3>
             </div>
@@ -776,17 +776,17 @@ const PostSeasonPage = () => {
               <h2 className="text-gray-500 text-2xl font-semibold text-center">
                 The Biggest Party in Pool!
               </h2>
-              <h2 className="text-white bg-blue px-4 py-2 my-2 text-2xl rounded-sm w-max mx-auto font-semibold">
+              <h2 className="text-white flex justify-center items-center bg-blue px-4 py-2 my-2 text-lg sm:text-2xl text-wrap rounded-sm w-full text-center sm:w-max mx-auto font-semibold">
                 The AZPL 2024 Fall State Championships!
               </h2>
             </div>
-            <div className="grid grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-6 md:gap-12">
               <div className="min-h-36 flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
                 <div className="w-full flex justify-center items-center bg-blue py-4 text-white text-2xl">
                   <FontAwesomeIcon icon={faCalendar} />
                 </div>
                 <div className="flex-1 flex justify-center py-6 gap-2 flex items-center">
-                  <h2 className="text-blue flex-1 text-2xl font-semibold  ">
+                <h2 className="text-blue flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
                     January 2, 3, 4 & 5th, 2025
                   </h2>
                 </div>
@@ -796,10 +796,10 @@ const PostSeasonPage = () => {
                   <FontAwesomeIcon icon={faMapPin} />
                 </div>
                 <div className="flex-1 flex justify-center py-6 gap-2 flex-col items-center">
-                  <h3 className="text-2xl font-semibold text-blue">
+                <h2 className="text-blue flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
                     Dozer's Grill
-                  </h3>
-                  <p className="text-slate-600 font-semibold">
+                  </h2>
+                  <p className="text-slate-600 font-semibold text-center leading-tight">
                     The Home of the AZPL State Championships!
                   </p>
                   <p className="text-slate-600 text-sm font-semibold">
@@ -809,14 +809,14 @@ const PostSeasonPage = () => {
               </div>
             </div>
             <DividingHeader header={"Order of Events"} />
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-2 sm:gap-4">
               <div className="grid grid-cols-1 gap-12">
                 <div className="min-h-36 flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-                  <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
+                  <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-lg md:text-2xl">
                     TUESDAY NIGHT
                   </div>
                   <div className="flex-1 flex justify-center py-6 gap-4 flex-col items-center">
-                    <h2 className="text-blue flex-1 text-2xl font-semibold  ">
+                    <h2 className="text-blue flex-1 text-lg sm:text-xl md:text-2xl text-center font-semibold  ">
                       8-Ball Scotch Doubles/Singles Tournament
                     </h2>
                     <p className="text-lg font-semibold text-center leading-tight text-gray-600">
@@ -826,7 +826,7 @@ const PostSeasonPage = () => {
                         sign up starts at 6pm
                       </span>
                     </p>
-                    <div>
+                    <div className="text-sm sm:text-base">
                       <p className="text-gray-600 flex justify-start items-start gap-4">
                         <FontAwesomeIcon
                           icon={faArrowAltCircleRight}
@@ -865,21 +865,21 @@ const PostSeasonPage = () => {
               </div>
               <div className="grid grid-cols-1 gap-12">
                 <div className="min-h-36 flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-                  <div className="w-full flex font-semibold justify-center items-center bg-blue pt-4 text-white text-2xl">
+                  <div className="w-full flex font-semibold justify-center items-center bg-blue pt-4 text-white text-lg md:text-2xl">
                     FRIDAY NIGHT
                   </div>
-                  <div className="w-full flex font-semibold justify-center items-center bg-blue pb-4 text-gray-200 text-lg">
+                  <div className="w-full flex font-semibold justify-center items-center bg-blue pb-4 text-gray-200 text-base md:text-lg">
                     FIVE EVENTS TO PLAY IN
                   </div>
                   <div className="grid grid-cols-1 gap-4 px-4 ">
                     <div className="flex-1 flex justify-center py-6 gap-4 flex-col items-center">
-                      <h2 className="text-blue flex-1 text-2xl font-semibold  ">
+                      <h2 className="text-blue flex-1 text-lg sm:text-xl md:text-2xl text-center font-semibold  ">
                         Wild Card Challenge
                       </h2>
                       <p className="text-lg font-semibold text-center leading-tight text-gray-600">
                         6pm
                       </p>
-                      <div className="max-w-2xl">
+                      <div className="max-w-2xl text-sm sm:text-base">
                         <p className="text-gray-600 flex justify-start items-start gap-4">
                           <FontAwesomeIcon
                             icon={faArrowAltCircleRight}
@@ -917,10 +917,10 @@ const PostSeasonPage = () => {
                   </div>
                   <DividingHeader header={""} />
                   <div className="flex-1 flex justify-center py-6 gap-4 flex-col items-center">
-                    <h2 className="text-blue flex-1 text-2xl font-semibold w-full flex flex-col justify-center items-center leading-tight  ">
-                      <div className="flex justify-around items-center flex-1 w-full ">
+                    <h2 className="text-blue flex-1 text-lg sm:text-xl md:text-2xl text-center font-semibold w-full flex flex-col justify-center items-center leading-tight  ">
+                      <div className="flex justify-around items-center mb-2 flex-1 w-full ">
                         <p>8-Ball</p>
-                        <p>9-Ball</p>
+                        <p className="border-x border-gray-300 px-4">9-Ball</p>
                         <p>10-Ball</p>
                       </div>
                       Singles Tournaments
@@ -932,7 +932,7 @@ const PostSeasonPage = () => {
                         sign up starts at 6pm
                       </span>
                     </p>
-                    <div>
+                    <div className="text-sm sm:text-base">
                       <p className="text-gray-600 flex justify-start items-start gap-4">
                         <FontAwesomeIcon
                           icon={faArrowAltCircleRight}
@@ -963,13 +963,13 @@ const PostSeasonPage = () => {
                   <DividingHeader header={""} />
                   <div className="grid grid-cols-1 gap-4 px-4 ">
                     <div className="flex-1 flex justify-center py-6 gap-4 flex-col items-center">
-                      <h2 className="text-blue flex-1 text-2xl font-semibold  ">
+                      <h2 className="text-blue flex-1 text-lg sm:text-xl md:text-2xl text-center font-semibold  ">
                         8-Ball Break & Run Derby
                       </h2>
                       <p className="text-lg font-semibold text-center leading-tight text-gray-600">
                         6pm
                       </p>
-                      <div className="max-w-2xl">
+                      <div className="max-w-2xl text-sm sm:text-base">
                         <p className="text-gray-600 flex justify-start items-start gap-4">
                           <FontAwesomeIcon
                             icon={faArrowAltCircleRight}
@@ -1015,15 +1015,15 @@ const PostSeasonPage = () => {
                           over.
                         </p>
                         <DividingHeader header={"Eligibility"} />
-                        <div className="flex justify-between flex-1 w-full mt-2 items-start gap-5 h-[88px]">
-                          <h3 className="bg-blue flex justify-center items-center text-white text-base font-semibold px-4 py-2 rounded flex-1 h-full text-center">
+                        <div className="flex justify-between flex-col sm:flex-row  flex-1 w-full mt-2 items-start gap-1 md:gap-5 h-max leading-tight md:h-[88px]">
+                          <h3 className="bg-blue flex justify-center items-center w-full text-white text-sm sm:text-base font-semibold px-4 py-2 rounded flex-1 h-full text-center">
                             Be in the Top 3 league leaders for 8 ball breaks or
                             Break & Runs
                           </h3>
-                          <h3 className="bg-blue flex justify-center items-center text-white text-base font-semibold px-4 py-2 rounded flex-1 h-full text-center">
+                          <h3 className="bg-blue flex justify-center items-center w-full text-white text-sm sm:text-base font-semibold px-4 py-2 rounded flex-1 h-full text-center">
                             Be the league leader for 10-0s!
                           </h3>
-                          <h3 className="bg-blue flex justify-center items-center text-white text-base font-semibold px-4 py-2 rounded flex-1 h-full text-center">
+                          <h3 className="bg-blue flex justify-center items-center w-full text-white text-sm sm:text-base font-semibold px-4 py-2 rounded flex-1 h-full text-center">
                             Buy your way in!
                             <br /> $10 entry!{" "}
                           </h3>
@@ -1035,15 +1035,15 @@ const PostSeasonPage = () => {
               </div>
               <div className="grid grid-cols-1 gap-12">
               <div className="min-h-36 flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-                <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
+                <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-lg md:text-2xl">
                   SATURDAY
                 </div>
                 <div className="flex-1 flex justify-center py-6 gap-4 flex-col items-center">
-                  <p className="text-white bg-red px-4 py-2 text-xl rounded font-semibold  flex justify-start items-center gap-4">
+                  <p className="text-white bg-red px-4 py-2 text-lg sm:text-xl rounded font-semibold  flex justify-start items-center gap-4">
                     {" "}
                     The Main Event
                   </p>
-                  <h2 className="text-blue flex-1 text-2xl font-semibold  ">
+                  <h2 className="text-blue flex-1 leading-tight text-lg sm:text-xl md:text-2xl text-center font-semibold  ">
                     AZPL State Championship Team Tournament
                   </h2>
                   <p className="text-lg font-semibold text-center leading-tight text-gray-600">
@@ -1058,25 +1058,25 @@ const PostSeasonPage = () => {
             </div>
             <div className="grid grid-cols-1 gap-12">
               <div className="min-h-36 flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-                <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
+                <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-lg md:text-2xl">
                   SUNDAY
                 </div>
                 <div className="flex-1 flex justify-center py-6 gap-4 flex-col items-center">
-                  <p className="text-white bg-red px-4 py-2 text-xl rounded font-semibold  flex justify-start items-center gap-4">
+                  <p className="text-white bg-red px-4 py-2 text-lg sm:text-xl rounded font-semibold  flex justify-start items-center gap-4">
                     {" "}
                     The Main Event
                   </p>
-                  <h2 className="text-blue flex-1 text-2xl font-semibold  ">
+                  <h2 className="text-blue flex-1 leading-tight text-lg sm:text-xl md:text-2xl text-center font-semibold  ">
                     AZPL State Championship Team Tournament
                   </h2>
                   <p className="text-lg font-semibold text-center leading-tight text-gray-600">
                     Doors open at 8:00am
                   </p>
                   <div className="text-center">
-                    <h2 className="text-gray-600 flex-1 text-lg font-semibold leading-tight  ">
+                    <h2 className="text-gray-600 flex-1 text-base sm:text-lg font-semibold leading-tight  ">
                       Continuation of both brackets as well as the start of the
                     </h2>
-                    <h2 className="text-red flex-1 text-xl font-semibold  leading-tight">
+                    <h2 className="text-red flex-1 text-lg sm:text-xl font-semibold  leading-tight">
                       Third Elimination brackets! Starts at 9am!
                     </h2>
                   </div>
@@ -1085,23 +1085,23 @@ const PostSeasonPage = () => {
             </div>
             </div>
             <DividingHeader header={"PRIZE POOL"}/>
-            <div className="grid grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-6 md:gap-12">
               <div className="min-h-36 flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-                <div className="w-full flex justify-center items-center bg-blue py-4 text-white text-2xl">
-                  1st Place
+              <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-lg md:text-2xl">
+              1st Place
                 </div>
                 <div className="flex-1 flex justify-center py-6 gap-2  items-center">
-                  <h2 className="text-blue flex-1 text-2xl font-semibold  ">
+                <h2 className="text-blue flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
                     $4,000
                   </h2>
                 </div>
               </div>
               <div className="min-h-36 flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-                <div className="w-full flex justify-center items-center bg-blue py-4 text-white text-2xl">
-                  Prize Pool
+              <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-lg md:text-2xl">
+              Prize Pool
                 </div>
                 <div className="flex-1 flex justify-center py-6 gap-2  items-center">
-                  <h2 className="text-blue flex-1 text-2xl font-semibold  ">
+                <h2 className="text-blue flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
                     $15,000
                   </h2>
                 </div>

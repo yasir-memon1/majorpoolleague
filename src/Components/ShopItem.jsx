@@ -7,9 +7,9 @@ const ShopItem = ({image, name, price})=>{
                     className="group-hover:scale-105 duration-700 ease-in-out "
                   />
                 </div>
-                <div className="flex flex-col gap-2 justify-start items-start w-full px-2">
-                  <h3 className="text-xl text-gray-900">{name}</h3>
-                  <h2 className="text-3xl font-bold text-gray-900">${price}</h2>
+                <div className="flex flex-col gap-0 sm:gap-2 justify-start items-start w-full px-2">
+                  <h3 className="text-lg md:text-xl text-gray-900">{name}</h3>
+                  <h2 className=" text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">${price}</h2>
                   <a
                     href="#"
                     className="mt-1 flex items-center justify-center rounded-md bg-blue w-full px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-indigo-700 duration-300  focus:outline-none focus:ring-4 focus:ring-blue-300"

@@ -427,12 +427,12 @@ const StatsPage = ()=>{
             <POW pow={pow} />
             <DividingHeader header="Statistics" />
             <div className="flex justify-start items-center gap-3">
-                <button className={`text-2xl font-semibold ${type === "teams" ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{type !== "teams" && setType("teams"); setGender({male: true, female: true})}}>Teams</button>
-                <button className={`text-2xl font-semibold ${type === "players" ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{type !== "players" && setType("players"); setGender({male: true, female: true})}}>Players</button>
+                <button className={`text-lg sm:text-2xl font-semibold ${type === "teams" ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{type !== "teams" && setType("teams"); setGender({male: true, female: true})}}>Teams</button>
+                <button className={`text-lg sm:text-2xl font-semibold ${type === "players" ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{type !== "players" && setType("players"); setGender({male: true, female: true})}}>Players</button>
             </div>
             <div className="flex justify-start items-center gap-3">
-                <button className={`text-xl font-semibold ${gender.male ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{setGender({male: !gender.male, female: gender.female})}}>Men</button>
-                <button className={`text-xl font-semibold ${gender.female  ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{setGender({male: gender.male, female: !gender.female})}}>Women</button>
+                <button className={`text-base sm:text-xl font-semibold ${gender.male ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{setGender({male: !gender.male, female: gender.female})}}>Men</button>
+                <button className={`text-base sm:text-xl font-semibold ${gender.female  ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{setGender({male: gender.male, female: !gender.female})}}>Women</button>
             </div>
             <div className='flex justify-start items-center gap-2 mt-5 flex-wrap'>
             <Dropdown onChange={handleClassChange} name="Timeframe" values={[{name:"History", values:["AT Totals", "AT by Season"]}, {name:"Seasons", values:["2025", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016","2015","2014","2013","2012","2011","2010","2009","2008","2007","2006","2005","2004","2003","2002","2001","2000",]}]} isOpen={openDropdown === 'Timeframe'}

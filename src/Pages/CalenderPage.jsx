@@ -69,12 +69,12 @@ const CalenderPage = () => {
           <div className="flex flex-col w-full gap-4">
             <div className="flex justify-between items-center w-full">
               <PageHeader heading="Calendar of Events" />
-              <h3 className="text-lg font-semibold text-gray-600">
+              <h3 className="text-lg text-nowrap font-semibold text-gray-600">
                 {formatDate(selectedDate)}
               </h3>
             </div>
             <CustomDatePicker />
-            <div className="flex justify-start items-center gap-2">
+            <div className="flex flex-col sm:flex-row justify-start items-center gap-2">
               <Dropdown
                 onChange={handleClassChange}
                 name="Class"
@@ -99,22 +99,22 @@ const CalenderPage = () => {
           </div>
           <div className="w-full  flex justify-center items-center flex-col gap-4 ">
           <div className="min-h-36 w-full flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-              <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
+              <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-lg md:text-2xl">
                 May 4, 2025
               </div>
               <div className="flex-1 flex justify-center py-6 gap-4 flex-col items-center">
                 <div className="flex flex-col  justify-center items-center mx-6 my-10">
-                  <h1 className="text-2xl text-blue font-semibold">Happy Birthday</h1>
-                  <h1 className="text-3xl text-blue font-semibold"> Player Name</h1>
+                  <h1 className="text-lg md:text-2xl text-blue font-semibold">Happy Birthday</h1>
+                  <h1 className="text-2xl md:text-3xl text-blue font-semibold"> Player Name</h1>
                 </div>
               </div>
             </div>
             <div className="min-h-36 w-full flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-              <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
+              <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-lg md:text-2xl">
                 May, 2025
               </div>
               <div className="flex-1 flex justify-center py-6 gap-4 flex-col items-center">
-                <div className="grid grid-cols-3 gap-12 mx-6 my-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-12 mx-6 my-10">
                   <Event
                     image={eventPlaceHolder}
                     name={"Event XYZ"}
@@ -155,11 +155,11 @@ const CalenderPage = () => {
               </div>
             </div>
             <div className="min-h-36 w-full flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-              <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
+              <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-lg md:text-2xl">
                 2025
               </div>
               <div className="flex-1 flex justify-center py-6 gap-4 flex-col items-center">
-                <div className="grid grid-cols-3 gap-12 mx-6 my-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mx-6 my-10">
                   <Event
                     image={eventPlaceHolder}
                     name={"Event XYZ"}
@@ -200,11 +200,11 @@ const CalenderPage = () => {
               </div>
             </div>
             <div className="min-h-36 w-full flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-              <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
+              <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-lg md:text-2xl">
                 2024
               </div>
               <div className="flex-1 flex justify-center py-6 gap-4 flex-col items-center">
-                <div className="grid grid-cols-3 gap-12 mx-6 my-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mx-6 my-10">
                   <Event
                     image={eventPlaceHolder}
                     name={"Event XYZ"}
@@ -245,11 +245,11 @@ const CalenderPage = () => {
               </div>
             </div>
             <div className="min-h-36 w-full flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-              <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
+              <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-lg md:text-2xl">
                 2023
               </div>
               <div className="flex-1 flex justify-center py-6 gap-4 flex-col items-center">
-                <div className="grid grid-cols-3 gap-12 mx-6 my-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mx-6 my-10">
                   <Event
                     image={eventPlaceHolder}
                     name={"Event XYZ"}
@@ -293,7 +293,7 @@ const CalenderPage = () => {
           <div className="flex flex-col gap-4">
               <div className="grid grid-cols-1 gap-12 ">
                 <div className="min-h-36 flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-                  <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
+                  <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-lg md:text-2xl">
                     THIS WEEK'S MATCHES
                   </div>
                   <div className="flex-1 w-full px-6 flex justify-center py-6 gap-4 flex-col items-center">

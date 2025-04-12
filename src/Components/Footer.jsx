@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="">
-              <img src={logo} className="h-32" />
+              <img src={logo} className="h-24 md:h-32" />
             </div>
 
             <p className="mt-4 max-w-xs text-gray-500 ">
@@ -79,10 +79,10 @@ const Footer = () => {
           </div>
 
           <div className="lg:col-span-2 flex flex-col justify-center items-center gap-6">
-            <h3 className="text-3xl text-blue  rounded-lg py-1 font-semibold ">Come Visit Us!</h3>
+            <h3 className="text-xl sm:text-2xl md:text-3xl text-blue  rounded-lg py-1 font-semibold ">Come Visit Us!</h3>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2  lg:grid-cols-5">
             <div>
-              <p className="font-semibold text-xl text-blue  leading-6">
+              <p className="font-semibold text-lg sm:text-xl text-blue  leading-6">
                 Mills Modern Social
               </p>
 
@@ -112,7 +112,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <p className="font-semibold text-xl text-blue  leading-6">
+              <p className="font-semibold text-lg sm:text-xl text-blue  leading-6">
                 Dozer's Grill
               </p>
 
@@ -141,7 +141,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <p className="font-semibold text-xl text-blue  leading-6">
+              <p className="font-semibold text-lg sm:text-xl text-blue  leading-6">
                 Stinger's Sports Bar
               </p>
 
@@ -170,7 +170,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <p className="font-semibold text-xl text-blue  leading-6">
+              <p className="font-semibold text-lg sm:text-xl text-blue  leading-6">
                 Drift Inn Saloon
               </p>
 
@@ -199,7 +199,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <p className="font-semibold text-xl text-blue  leading-6">
+              <p className="font-semibold text-lg sm:text-xl text-blue  leading-6">
                 Bun Huggers
               </p>
 

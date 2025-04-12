@@ -187,17 +187,17 @@ const HeadToHeadPlayer = ({ title }) => {
       <div className="bg-gray-100 py-10">
         <div className="max-w-7xl  mx-auto p-4 bg-white text-slate-900">
           <div className="flex flex-col w-full gap-4">
-            <div className="w-full flex justify-around items-center">
+            <div className="w-full flex md:flex-row flex-col justify-around items-center">
               <div className="flex justify-center  items-center  gap-4">
-                <div className="w-36 h-36 rounded-full flex justify-center items-center border-2 overflow-hidden border-blue">
+                <div className="md:w-36 md:h-36 w-24 h-24 rounded-full flex justify-center items-center border-2 overflow-hidden border-blue">
                   <img src={pfpPlaceholder} />
                 </div>
                 <div className="">
-                  <h1 className="text-4xl font-semibold">Player Name</h1>
+                  <h1 className="text-2xl md:text-4xl leading-tight font-semibold">Player Name</h1>
                   <p className="text-gray-500 text-base">Team Name</p>
                 </div>
                 <div>
-                    <h2 className="text-4xl  text-blue font-bold">10</h2>
+                    <h2 className="text-3xl md:text-4xl  text-blue font-bold">10</h2>
                 </div>
               </div>
               <div className="leading-none flex justify-center items-center flex-col text-xl font-bold text-red">
@@ -206,16 +206,16 @@ const HeadToHeadPlayer = ({ title }) => {
                 <p>HEAD</p>
               </div>
               <div className="flex justify-center flex-row-reverse  items-center  gap-4">
-                <div className="w-36 h-36 rounded-full flex justify-center  items-center border-2 overflow-hidden border-blue">
-                  <img src={pfpPlaceholder} />
+              <div className="md:w-36 md:h-36 w-24 h-24 rounded-full flex justify-center items-center border-2 overflow-hidden border-blue">
+              <img src={pfpPlaceholder} />
                 </div>
                 <div className="">
-                  <h1 className="text-4xl font-semibold">Player Name</h1>
+                  <h1 className="text-2xl md:text-4xl leading-tight font-semibold">Player Name</h1>
                   <p className="text-gray-500 text-base">Team Name</p>
 
                 </div>
                 <div>
-                    <h2 className="text-4xl  text-blue font-bold">10</h2>
+                    <h2 className="text-3xl md:text-4xl  text-blue font-bold">10</h2>
                 </div>
               </div>
             </div>

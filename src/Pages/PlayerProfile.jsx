@@ -580,13 +580,13 @@ const PlayerProfile = () => {
           <img src={coverPlaceholder} alt="" className="object-cover" />
         </div>
 
-        <div className="flex justify-start items-center px-8 gap-4">
-          <div className="w-36 h-36 rounded-full flex justify-center items-center border-2 overflow-hidden border-blue">
+        <div className="flex justify-start items-center px-0 md:px-8 gap-4">
+          <div className="md:w-36 md:h-36 w-24 h-24 rounded-full flex justify-center items-center border-2 overflow-hidden border-blue">
             <img src={pfpPlaceholder} />
           </div>
           <div className="flex-1">
-            <h1 className="text-2xl font-semibold">Player Name</h1>
-            <p className="text-gray-500 text-base">Team Name</p>
+            <h1 className="text-lg sm:text-2xl leading-tight font-semibold">Player Name</h1>
+            <p className="text-gray-500 text-base leading-tight">Team Name</p>
           </div>
           <div>
             <Link to={"/head-to-head/player"} className="bg-blue text-white px-4 py-2 rounded-lg text-base">
@@ -595,7 +595,7 @@ const PlayerProfile = () => {
           </div>
         </div>
 
-        <div className="flex justify-start items-center px-12 gap-4">
+        <div className="flex justify-start items-center px-2 md:px-12 gap-4">
           <ul>
             <li><span className="font-semibold text-gray-900">Player's Full Name</span></li>
             <li><span className="font-semibold text-gray-900">Born:</span> May 4th, 2002</li>
@@ -603,9 +603,9 @@ const PlayerProfile = () => {
             <li><span className="font-semibold text-gray-900">Bio:</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam vero eaque ducimus, illum esse quisquam est rerum saepe ut tenetur magnam impedit iusto cupiditate harum velit voluptas atque animi deserunt.</li>
           </ul>
         </div>
-        <div className="mt-4 px-12">
+        <div className="mt-4 px-2 md:px-12">
         <DividingHeader header={"T-Shirts"}/>
-        <div className="grid grid-cols-3 gap-12 mx-6 my-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-12 mx-6 my-10">
               <ShopItem name={"Pool Shirt Black"} price={"34.99"} image={shirtPlaceholder}/>
               <ShopItem name={"Pool Shirt Black"} price={"34.99"} image={shirtPlaceholder}/>
               <ShopItem name={"Pool Shirt Black"} price={"34.99"} image={shirtPlaceholder}/>

@@ -13,7 +13,7 @@ const Shop = () => {
         <div className="max-w-7xl  mx-auto p-4 bg-white text-slate-900">
           <div className="flex flex-col w-full gap-1">
             <DividingHeader header={"Shop"} />
-            <div className="flex justify-center items-center text-xl text-center   border-b-[1px] ">
+            <div className="flex justify-center items-center text-lg sm:text-xl text-center   border-b-[1px] ">
               <button
                 onClick={() => setSelected("men")}
                 className={`${
@@ -45,7 +45,7 @@ const Shop = () => {
                 <h2>Kids</h2>
               </button>
             </div>
-            <div className="grid grid-cols-3 gap-12 mx-6 my-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-6 md:gap-12">
               <ShopItem name={"Pool Shirt Black"} price={"34.99"} image={placeHolder}/>
               <ShopItem name={"Pool Shirt Black"} price={"34.99"} image={placeHolder}/>
               <ShopItem name={"Pool Shirt Black"} price={"34.99"} image={placeHolder}/>

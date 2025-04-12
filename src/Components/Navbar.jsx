@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/Logo2.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
-import { Link,  useNavigate } from "react-router-dom";
+import { Link,  useLocation,  useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,6 +15,13 @@ const Navbar = () => {
 
   const openSubmenu = (menu) => setActiveSubmenu(menu);
   const closeSubmenu = () => setActiveSubmenu(null);
+
+  const location = useLocation()
+
+  useEffect(()=>{
+    setIsMobileMenuOpen(false)
+    closeSubmenu()
+  },[location] )
 
   const navItems = [
     {
@@ -199,7 +206,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed  top-0 left-0 h-full w-[50vw] sm:w-64 bg-white transform ${
+        className={`fixed  top-0 left-0 h-full w-full sm:w-64 bg-white transform ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out md:hidden z-50`}
       >
@@ -262,8 +269,8 @@ const Navbar = () => {
 
       {activeSubmenu && (
         <div
-          className={`fixed  top-0 left-0 h-full w-64 bg-blue transform ${
-            activeSubmenu ? "translate-x-[50vw] sm:translate-x-64" : "translate-x-full"
+          className={`fixed  top-0 left-0 h-full w-full sm:w-64 bg-blue transform ${
+            activeSubmenu ? "translate-x-[0] sm:translate-x-64" : "translate-x-full"
           } transition-transform duration-300 ease-in-out md:hidden z-50`}
         >
           <div className="flex h-[65px] items-center justify-between px-4 py-3 border-b border-gray-700">

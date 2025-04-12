@@ -58,13 +58,13 @@ const WeeklyScoresPage = () => {
           <div className="flex flex-col w-full gap-4">
             <div className="flex flex-1 flex-row justify-between items-center">
               <PageHeader heading="Weekly Scores" />
-              <h2 className="text-xl font-semibold text-gray-700">Week 4</h2>
+              <h2 className="text-base sm:text-lg md:text-xl font-semibold text-gray-700">Week 4</h2>
             </div>
 
             <div className="flex flex-col gap-4">
               <div className="grid grid-cols-1 gap-12 ">
                 <div className="min-h-36 flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-                  <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-2xl">
+                  <div className="w-full flex font-semibold justify-center items-center bg-blue py-4 text-white text-lg md:text-2xl">
                     MONDAY
                   </div>
                   <div className="flex-1 w-full px-6 flex justify-center py-6 gap-4 flex-col items-center">

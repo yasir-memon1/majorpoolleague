@@ -229,15 +229,15 @@ const StandingsPage = ()=>{
           <div className="flex flex-col w-full gap-1">
             <PageHeader heading="Standings" />
             <div className="flex justify-start items-center gap-3">
-                <button className={`text-2xl font-semibold ${type === "teams" ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{type !== "teams" && setType("teams"); setGender({male: true, female: true})}}>Teams</button>
-                <button className={`text-2xl font-semibold ${type === "players" ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{type !== "players" && setType("players"); setGender({male: true, female: true})}}>Players</button>
+                <button className={` text-lg sm:text-2xl font-semibold ${type === "teams" ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{type !== "teams" && setType("teams"); setGender({male: true, female: true})}}>Teams</button>
+                <button className={` text-lg sm:text-2xl font-semibold ${type === "players" ? "text-blue underline underline-offset-4" : "text-gray-500"} hover:text-blue duration-200`} onClick={()=>{type !== "players" && setType("players"); setGender({male: true, female: true})}}>Players</button>
             </div>
            
-            <div className="mt-5">
+            <div className="mt-2 md:mt-5">
             <CustomDatePicker/>
             </div>
            
-            <div className='flex justify-start items-center gap-2 mt-5 flex-wrap'>
+            <div className='flex justify-start items-center gap-2 mt-2 md:mt-5 flex-wrap'>
             <Dropdown onChange={handleClassChange} name="Season" values={[{name: null, values:["Regular Season" ,"Post Season Races", "Play-Off"]}]} isOpen={openDropdown === 'Season'}
         onToggle={() => handleToggle('Season')} selectedValue={season}/>
             {season === "Regular Season" && <Dropdown onChange={handleClassChange} name="Division" values={[{name: null, values:["Division" ,"League", "MLP"]}]} isOpen={openDropdown === 'Division'}

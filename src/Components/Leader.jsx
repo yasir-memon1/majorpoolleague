@@ -2,23 +2,23 @@ import { Link } from "react-router-dom"
 import DividingHeader from "../UI/DividingHeader"
 
 const LeaderBox = ({scoring_name, score, image, name, position})=>{
-    return(<div className="flex w-full h-[74px] justify-center items-center px-8 py-2 gap-4 text-gay-600 border border-gray-300">
-        <h2 className="text-blue text-xl font-semibold flex-1 border-r border-gray-300 h-full flex justify-start items-center">{scoring_name}</h2>
-        <h3 className="text-xl font-semibold border-r border-gray-300 h-full flex justify-start items-center pr-4">{score}</h3>
+    return(<div className="flex w-full h-[74px] justify-center items-center px-2 md:px-8 py-2 gap-4 text-gay-600 border border-gray-300">
+        <h2 className="text-blue text-base sm:text-lg md:text-xl leading-none font-semibold flex-1 border-r border-gray-300 h-full flex justify-start items-center">{scoring_name}</h2>
+        <h3 className="text-base sm:text-lg md:text-xl leading-none font-semibold border-r border-gray-300 h-full flex justify-start items-center pr-4">{score}</h3>
         {
           !position ? <div className="flex flex-row flex-1 justify-center items-center gap-4">
           <div className="w-14 h-14 rounded-full overflow-hidden">
             <img className="object-cover" src={image} />
           </div>
           <div className="flex flex-1 flex-col">
-            <Link to={""} className="text-xl  hover:text-blue duration-200  ">
+            <Link to={""} className="text-base sm:text-lg md:text-xl  hover:text-blue duration-200  ">
               {name}
             </Link>
             {/* <p className="text-base  text-gray-500 duration-200  ">
                 {player.team}
               </p> */}
           </div>
-        </div> :         <h3 className="text-xl font-semibold h-full flex justify-start items-center ">#{position}</h3>
+        </div> :         <h3 className="text-base sm:text-lg md:text-xl font-semibold h-full flex justify-start items-center ">#{position}</h3>
 
         }
       </div>)

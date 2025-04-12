@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import LeaguesByGeo from './Pages/LeaguesByGeo'
@@ -28,9 +28,17 @@ import Shop from './Pages/Shop'
 import WeeklyScoresPage from './Pages/WeeklyScoresPage'
 import Division from './Pages/Division'
 import AboutPage from './Pages/About'
+import Champions from './Pages/Champions'
+import Championship from './Pages/Championship'
+import { useEffect } from 'react'
 
 function App() {
 
+  const location = useLocation();
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  }, [location])
   return (
     <>
     <Navbar/>
@@ -45,6 +53,10 @@ function App() {
       <Route path='/weekly-scores' element={<WeeklyScoresPage/>}/>
       <Route path='/division/:name' element={<Division/>}/>
       <Route path='/about' element={<AboutPage/>}/>
+
+
+      <Route path="/history" element={<Champions/>}/>
+      <Route path="/championship/:name" element={<Championship/>}/>
 
       <Route path='/players' element={<PlayersPage/>}/>
       <Route path='/player/:name' element={<PlayerProfile/>}/>

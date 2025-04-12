@@ -6,6 +6,8 @@ import banner from "../assets/State Champ Banner small.jpg";
 import poster from "../assets/biggestpartyposter.jpg";
 import placeHolder from "../assets/player-placeholder.png"
 import teamPlaceholder from "../assets/league-placeholder (1).png"
+import eventPicPlaceholder from "../assets/league-placeholder.png";
+
 import {
   faArrowAltCircleRight,
   faCalendar,
@@ -452,6 +454,7 @@ const playerData = [
       team_image: teamPlaceholder,
       team: "Albuquerque Isotopes",
       
+      
     },
     {
       name:     "John Smith",
@@ -466,6 +469,7 @@ const playerData = [
       image: placeHolder,
       team_image: teamPlaceholder,
       team: "Albuquerque Isotopes",
+      mvp: true
       
     },
     
@@ -674,13 +678,13 @@ const playerData = [
     
     
 ]
-const Division = () => {
+const Championship = () => {
   return (
     <Page>
       <div className="bg-gray-100 py-10">
         <div className="max-w-7xl  mx-auto p-4 bg-white text-slate-900">
         <div className="flex flex-col w-full gap-3  md:gap-6">
-            <PageHeader heading={"Sunday Mills Modern Social In-House"} />
+        <PageHeader heading={"Summer 2024"} />
 
             <img src={banner} className=" w-full md:w-2/3 mx-auto" />
 
@@ -688,7 +692,7 @@ const Division = () => {
 
            
             <DividingHeader
-              header={"Time Table"}
+              header={"Date & Location"}
             />
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-6 md:gap-12">
@@ -698,22 +702,20 @@ const Division = () => {
                 </div>
                 <div className="flex-1 flex justify-center py-6  flex-col  items-center">
                 <h2 className="text-blue flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                    Every Sunday
+                May 4, 2009
                   </h2>
-                  <h2 className="text-blue flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                  4:00 PM
-                  </h2>
+                 
                 </div>
               </div>
               <div className="min-h-36 flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-                <div className="w-full flex justify-center items-center bg-blue py-4 text-white text-2xl">
-                  <FontAwesomeIcon icon={faMapPin} />
+              <div className="w-full flex justify-center items-center bg-blue py-4 text-white text-2xl">
+              <FontAwesomeIcon icon={faMapPin} />
                 </div>
                 <div className="flex-1 flex justify-center py-6 gap-2 flex-col items-center">
-                <h2 className="text-blue flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
+                  <h3 className="text-xl md:text-2xl font-semibold text-blue">
                   Mill's Modern Social
-                  </h2>
-                  <p className="text-slate-600 font-semibold">
+                  </h3>
+                  <p className="text-slate-600 text-center font-semibold">
                     The Home of the AZPL State Championships!
                   </p>
                   <p className="text-slate-600 text-sm font-semibold">
@@ -723,21 +725,51 @@ const Division = () => {
               </div>
             </div>
            
-            <DividingHeader header={"Schedule"}/>
+            <DividingHeader header={"Matches"}/>
+            <h3 className="text-center w-full text-blue text-xl md:text-2xl font-semibold">Finals</h3>
+            <MatchResults matches={matches.slice(0,1)}/>
+            <h3 className="text-center w-full text-blue text-xl md:text-2xl font-semibold">Semi Finals</h3>
+            <MatchResults matches={matches.slice(0,2)}/>
+            <h3 className="text-center w-full text-blue text-xl md:text-2xl font-semibold">Quarter Finals</h3>
             <MatchResults matches={matches}/>
             <DividingHeader header={"Players"}/>
+            <h3 className="text-center w-full text-blue text-xl md:text-2xl font-semibold">Division 1</h3>
+            <PlayersShowcase players={players} />
+            <h3 className="text-center w-full text-blue text-xl md:text-2xl font-semibold">Division 2</h3>
             <PlayersShowcase players={players} />
             <DividingHeader header={"Teams"}/>
             <TeamsShowcase teams={teams}/>
-
-            
-            <DividingHeader header={"Championship Stats"}/>
+            <DividingHeader header={"EVENT PICS"} />
+                <div className="grid grid-cols-1 p-4 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <div className="w-full h-full flex justify-center items-center rounded overflow-hidden">
+                    <img
+                      src={eventPicPlaceholder}
+                      alt=""
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="w-full h-full flex justify-center items-center rounded overflow-hidden">
+                    <img
+                      src={eventPicPlaceholder}
+                      alt=""
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="w-full h-full flex justify-center items-center rounded overflow-hidden">
+                    <img
+                      src={eventPicPlaceholder}
+                      alt=""
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+            <DividingHeader header={"Leaders"}/>
             <Table tableHeaders={PLAYER_HEADERS} data={playerData}/>
             <DividingHeader header={"Players of the Week - Men"}/>
             <Table tableHeaders={PLAYER_HEADERS} data={playerData}/>
             <DividingHeader header={"Players of the Week - Women"}/>
             <Table tableHeaders={PLAYER_HEADERS} data={playerData}/>
-            <DividingHeader header={"Division Leaders"}/>
+            <DividingHeader header={"Championship Leaders"}/>
             <Leaders leaders={leaders}/>
             <DividingHeader header={"Top Rookie Men & Women"}/>
             <Table tableHeaders={PLAYER_HEADERS} data={playerData}/>
@@ -745,10 +777,9 @@ const Division = () => {
             <Table tableHeaders={PLAYER_HEADERS} data={playerData}/>
             <DividingHeader header={"Women of the AZPL"}/>
             <Table tableHeaders={PLAYER_HEADERS} data={playerData}/>
-            <DividingHeader header={"Top 10 of Division"}/>
+            <DividingHeader header={"Top 10 of Championship"}/>
             <Table tableHeaders={PLAYER_HEADERS} data={playerData}/>
-            <DividingHeader header={"All Time Player Stats"}/>
-            <Table tableHeaders={PLAYER_HEADERS} data={playerData}/>
+   
 
 
 
@@ -759,4 +790,4 @@ const Division = () => {
     </Page>
   );
 };
-export default Division;
+export default Championship;

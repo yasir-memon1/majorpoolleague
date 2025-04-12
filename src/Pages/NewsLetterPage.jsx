@@ -12,16 +12,16 @@ const NewsLetterPage = ()=>{
             <div>
               <DividingHeader header={"News Letter"} />
             </div>
-            <p className="text-gray-500 text-base text-center">
+            <p className="text-gray-500 text-sm md:text-base text-center">
               Subscribe to out Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum suscipit magni beatae corrupti consequatur, deserunt ullam dicta eveniet reiciendis incidunt, odio ex possimus ipsa, ipsam iusto? Corrupti, ab et!
             </p>
           </div>
           
          
-          <div className="flex  justify-center items-center flex-1 w-full gap-4 max-w-2/3">
+          <div className="flex flex-col sm:flex-row justify-center items-center flex-1 w-full gap-2 sm:gap-4 max-w-2/3">
           <MailInput />
             <button
-              className=" text-lg text-white bg-blue px-4 h-[42px] flex justify-center  items-center rounded-md border-2 border-blue  hover:text-blue hover:bg-white duration-200 font-semibold"
+              className=" text-base w-44 sm:w-auto sm:text-lg text-white bg-blue px-4 h-[42px] flex justify-center  items-center rounded-md border-2 border-blue  hover:text-blue hover:bg-white duration-200 font-semibold"
             >
               Cast Vote
             </button>

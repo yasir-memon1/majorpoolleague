@@ -11,15 +11,15 @@ const MatchResults = ({ matches }) => {
     <div className="grid grid-cols-1  w-full   gap-4">
       {isViewingMatch && <MatchView close={closePopup} match={matches[0]}/>}
       {matches.map((match, index) => (
-        <div className="flex justify-center group items-center w-full flex-1 gap-0" onClick={() => setIsViewingMatch(true)}>
+        <div className="flex justify-center md:flex-row flex-col group items-center w-full flex-1 gap-0" onClick={() => setIsViewingMatch(true)}>
           <div
             key={index}
             className={`
-             py-4 gap-4 flex-1 border px-8 group-hover:border-blue duration-200 font-semibold text-base text-gray-600  flex justify-center items-center`}
+             py-4 gap-4 flex-1 border md:px-8 px-4 w-full group-hover:border-blue duration-200 font-semibold text-base text-gray-600  flex justify-center items-center`}
           >
             {match.team1.score && match.team2.score && (
               <div
-                className={`text-xl font-semibold  ${
+                className={` text-lg md:text-xl font-semibold  ${
                   match.team1.score > match.team2.score
                     ? "text-blue"
                     : "text-red"
@@ -35,7 +35,7 @@ const MatchResults = ({ matches }) => {
               <div className="flex flex-1 flex-col">
                 <Link
                   to={""}
-                  className="text-xl leading-none  hover:text-blue duration-200  "
+                  className="text-lg md:text-xl leading-none  hover:text-blue duration-200  "
                 >
                   {match.team1.name}
                 </Link>
@@ -45,7 +45,7 @@ const MatchResults = ({ matches }) => {
               </div>
             </div>
             <div
-              className={`text-xl font-semibold  ${
+              className={`text-lg md:text-xl font-semibold  ${
                 match.team1.score > match.team2.score ? "text-blue" : "text-red"
               }`}
             >
@@ -58,12 +58,12 @@ const MatchResults = ({ matches }) => {
           </div>
           <div
             key={index}
-            className={` py-4 gap-4 flex-1 px-8 border group-hover:border-blue duration-200  font-semibold text-base text-gray-600  flex flex-row-reverse justify-center items-center`}
+            className={` py-4 gap-4 flex-1 md:px-8 px-4 w-full w-full border group-hover:border-blue duration-200  font-semibold text-base text-gray-600  flex flex-row-reverse justify-center items-center`}
           >
                     {match.team1.score && match.team2.score && (
 
             <div
-              className={`text-xl font-semibold  ${
+              className={`text-lg md:text-xl font-semibold  ${
                 match.team2.score > match.team1.score ? "text-blue" : "text-red"
               }`}
             >
@@ -77,7 +77,7 @@ const MatchResults = ({ matches }) => {
               <div className="flex flex-1 flex-col">
                 <Link
                   to={""}
-                  className="text-xl leading-none text-right  hover:text-blue duration-200  "
+                  className="text-lg md:text-xl leading-none text-right  hover:text-blue duration-200  "
                 >
                   {match.team2.name}
                 </Link>
@@ -89,7 +89,7 @@ const MatchResults = ({ matches }) => {
             {match.team1.score && match.team2.score && (
 
             <div
-              className={`text-xl font-semibold  ${
+              className={`text-lg md:text-xl font-semibold  ${
                 match.team2.score > match.team1.score ? "text-blue" : "text-red"
               }`}
             >
