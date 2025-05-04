@@ -31,6 +31,12 @@ import AboutPage from './Pages/About'
 import Champions from './Pages/Champions'
 import Championship from './Pages/Championship'
 import { useEffect } from 'react'
+import MatchesNav from './Components/MatchesNav'
+import MatchPage from './Pages/MatchPage'
+import PlayerJoin from './Pages/PlayerJoin'
+import Rules from './Pages/Rules'
+import Policies from './Pages/Policies'
+import Memberships from './Pages/Memberships'
 
 function App() {
 
@@ -42,6 +48,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    <MatchesNav/>
     <Routes>
       <Route path='/majorpoolleague' element={<Home/>}/>
       <Route path='/calendar' element={<CalenderPage/>}/>
@@ -53,6 +60,10 @@ function App() {
       <Route path='/weekly-scores' element={<WeeklyScoresPage/>}/>
       <Route path='/division/:name' element={<Division/>}/>
       <Route path='/about' element={<AboutPage/>}/>
+      <Route path="/match" element={<MatchPage/>}/>
+      <Route path="/join" element={<PlayerJoin/>}/>
+      <Route path="/rules" element={<Rules/>}/>
+      <Route path="/policies" element={<Policies/>}/>
 
 
       <Route path="/history" element={<Champions/>}/>
@@ -81,7 +92,7 @@ function App() {
       <Route path="/vote" element={<VoteForHOF/>}/>
 
       <Route path="/signin" element={<LOLoginPage/>}/>
-      <Route path="/signup" element={<SignUpPage/>}/>
+      <Route path="/signup" element={<Memberships/>}/>
     </Routes>
     <Footer/>
     </>

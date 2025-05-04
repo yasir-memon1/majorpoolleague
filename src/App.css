@@ -34,3 +34,10 @@
     bottom: auto;
     opacity: 1;
   }
+
+  .snap-x {
+    scroll-snap-type: x mandatory;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }

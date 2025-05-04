@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 
 
-const Table = ({tableHeaders, data}) => {
+const Table = ({tableHeaders, data, noWidth=false}) => {
   // State to manage sort configuration
+  console.log(data)
   const [sortConfig, setSortConfig] = useState({
     key: null, // Column key to sort by
     direction: 'asc', // 'asc' or 'desc'
@@ -44,7 +45,7 @@ const Table = ({tableHeaders, data}) => {
     <div className="max-w-7xl mx-auto w-full p-4 bg-white text-slate-900">
       <div  className="mb-8">
           <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-600">
-            <table className="w-full min-w-[640px] border-collapse relative ">
+            <table className={`w-full ${!noWidth && "min-w-[640px]"} border-collapse relative `}>
               <thead className="bg-white text-xs ">
                 <tr className='border-b-2'>
                   {tableHeaders?.map((header, index) => (
@@ -64,16 +65,19 @@ const Table = ({tableHeaders, data}) => {
               <tbody className='text-sm   '>
               
                 {
-                  sortedData.map((item,index)=> (
-                    <tr
+                  sortedData.map((item,index)=> {
+                    const {accolade, ...rest} = item;
+
+                   
+                    return<tr
                     key={index}
                     className={` bg-white group  hover:bg-gray-200 transition-colors duration-200 ease-in-out`}
                   >
-                    {Object.entries(item).map(([key, value], index) => {
+                    {Object.entries(rest).map(([key, value], index) => {
                       if (index === 0) {
                         return (
                           <td key={index} className="sticky left-0 py-2 px-4 text-left z-10 bg-white group-hover:bg-gray-200 duration-200 ease-in-out">
-                            <a href="#" className=" hover:text-blue  bg-inherit">{value}</a></td>
+                            <a href="#" className=" hover:text-blue  bg-inherit">{value}</a><span className='block leading-none text-sm  ml-2 text-gray-400'>{accolade}</span></td>
                         );
                       }
                       else {
@@ -83,7 +87,7 @@ const Table = ({tableHeaders, data}) => {
                       }
                     })}
                   </tr>
-                  ))
+})
                 }
 
               </tbody>

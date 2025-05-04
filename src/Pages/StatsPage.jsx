@@ -11,105 +11,133 @@ import POW from "../Components/POW"
 const PLAYER_HEADERS = [
     {
         name: "Player",
+        key: "player"
     },
     {
         name: "Team",
+        key: "team"
     },
     {
         name: "Games",
-        desc: "Games"
+        desc: "Games",
+        key: "games"
     },
     {
         name: "PR",
-        desc: "PR"
+        desc: "PR",
+        key: "pr",
+
     },
     {
         name: "PTS",
-        desc: "Points"
+        desc: "Points",
+        key: "pts",
+
     },
     {
         name: "UEW",
-        desc: "Unearned Wins"
+        desc: "Unearned Wins",
+        key: "uew",
     },
     {
         name: "DB/RO",
-        desc: "DB/RO"
+        desc: "DB/RO",
+        key: "dbro",
     },
     {
         name: "B&R",
-        desc: "B&R"
+        desc: "B&R",
+        key: "br",
     },
     {
         name: "8BB",
-        desc: "8BB"
+        desc: "8BB",
+        key: "8bb",
     },
     {
         name: "CC",
-        desc: "CC"
+        desc: "CC",
+        key: "cc",
     },
     {
         name: "W",
-        desc: "Wins"
+        desc: "Wins",
+        key: "w",
     },
     {
         name: "L",
-        desc: "Losses"
+        desc: "Losses",
+        key: "l",
     },
     {
         name: "W%",
-        desc: "Win %"
+        desc: "Win %",
+        key: "wp",
     },
     {
         name: "EWA",
-        desc: "Earned Win Avg"
+        desc: "Earned Win Avg",
+        key: "ewa",
     },
     {
         name: "PA",
-        desc: "PA"
+        desc: "PA",
+        key: "pa",
     },
     {
         name: "PTS/PA",
-        desc: "PTS/PA"
+        desc: "PTS/PA",
+        key: "ptspa",
     },
     {
         name: "4f4",
-        desc: "4f4"
+        desc: "4f4",
+        key: "4f4",
     },
     {
         name: "5f5",
-        desc: "5f5"
+        desc: "5f5",
+        key: "5f5",
     },
     {
         name: "PS",
-        desc: "Points Streak"
+        desc: "Points Streak",
+        key: "ps",
     },
     {
         name: "WS",
-        desc: "Win Streak"
+        desc: "Win Streak",
+        key: "ws",
     },
     {
         name: "AVG",
-        desc: "Scoring Avg"
+        desc: "Scoring Avg",
+        key: "avg",
     },
     {
         name: "GA",
-        desc: "Game Avg"
+        desc: "Game Avg",
+        key: "ga",
     },
     {
         name: "O GA",
-        desc: "Opponents"
+        desc: "Opponents",
+        key: "oga",
     },
     {
         name: "MA",
-        desc: "MA"
+        desc: "MA",
+        key: "ma",
     },
     {
         name: "O MA",
-        desc: "O MA"
+        desc: "O MA",
+        key: "oma",
     },
     {
         name: "MIP",
-        desc: "MIP"
+        desc: "MIP",
+        key: "mip",
     }
     
 ]
@@ -249,14 +277,14 @@ const StatsPage = ()=>{
         setOpenDropdown(null); 
       };
     const playerData = [
-            { name: "John Doe", v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
-            { name: "Jane Smith", v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
-            { name: "John Doe", v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
-            { name: "Jane Smith", v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
-            { name: "John Doe", v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
-            { name: "Jane Smith", v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
-            { name: "John Doe", v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
-            { name: "Jane Smith", v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
+            { name: "John Doe",team: "Team A", games:10, v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
+            { name: "Jane Smith",team: "Team A", games:12, v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
+            { name: "John Doe",team: "Team A", games:14, v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
+            { name: "Jane Smith",team: "Team A", games:10, v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
+            { name: "John Doe",team: "Team A", games:10, v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
+            { name: "Jane Smith",team: "Team A", games:21, v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
+            { name: "John Doe",team: "Team A", games:17, v: 10, pr: 5, points: 50, pa: 20, scoring: "75%", ppa: 2.5, w: 8, l: 2, winpct: "80%", thirties: 3, eightball: 1, breakrun: 2, tenzeros: 1, winstrk: 5, ma: 15, m: 10 },
+            { name: "Jane Smith",team: "Team A", games:1, v: 8, pr: 4, points: 40, pa: 18, scoring: "70%", ppa: 2.2, w: 6, l: 3, winpct: "66%", thirties: 2, eightball: 0, breakrun: 1, tenzeros: 0, winstrk: 3, ma: 12, m: 8 },
           ]
       console.log(Headers)
 

@@ -17,6 +17,7 @@ import {
 import MatchResults from "../Components/MatchResults";
 import Table from "../UI/Table";
 import Leaders from "../Components/Leaders";
+import { Link } from "react-router-dom";
 
 const matches = [
   {
@@ -705,6 +706,7 @@ const PLAYER_HEADERS = [
   },
 ];
 const AboutPage = () => {
+
   return (
     <Page>
       <div className="bg-gray-100 py-10">
@@ -916,34 +918,7 @@ const AboutPage = () => {
               depending on the event!
             </p>
 
-            <DividingHeader header={"What’s the Globe Trot?"} />
-
-            <p className="text-gray-600 text-sm sm:text-base text-justify">
-              The Globe Trot is our annual trip to 2 Lanes Saloon in Globe!
-              Traditionally held the last weekend of September as a farewell to
-              summer this year the dates are Sept 30, Oct 1 & 2! On Friday night
-              we have a singles tournament and karaoke! Saturday we start off
-              the day with a barbeque and team tournament followed by some 3
-              ball capped off with a scotch-doubles/singles tournament and some
-              more karaoke! To finish the weekend we have another barbeque on
-              Sunday with a singles tournament! There are 3 hotels right across
-              the street as well as a Denny’s! You don’t have to touch your car
-              the entire weekend! Play some pool, eat some food, sing some songs
-              and have a blast!
-            </p>
-            <DividingHeader header={"Whiskey Row?"} />
-
-            <p className="text-gray-600 text-sm sm:text-base text-justify">
-              In the spring we have our Whiskey Row Run event at Barefoot Bob’s
-              Billiards in Prescott Valley! This is traditionally held the final
-              weekend of March. Three fun-filled days of pool! A
-              scotch-doubles/singles tournament on Friday to kick off the
-              weekend! Saturday features a bring your own team of 5 team
-              tournament along with our 8-Ball Break & Run Derby event. In the
-              evening we close out the night with an 8-ball tournament and a
-              10-ball/9-ball tourney! To close out the weekend we have a
-              3-person team event on Sunday!
-            </p>
+            
             <DividingHeader header={"How much does it cost to join?"} />
 
             <p className="text-gray-600 text-sm sm:text-base text-justify">
@@ -967,11 +942,7 @@ const AboutPage = () => {
               Nationwide!
             </p>
 
-              <h3 className="text-center text-xl mb-2 leading-tight sm:text-3xl font-semibold text-blue mt-3">
-              Contact me today to get started!
-              <br />
-              Play begins every year in January, May & September!
-            </h3>
+              
 
             <div>
             <div className="flex w-full justify-around leading-tight items-center text-base sm:text-lg md:text-2xl font-semibold text-blue">
@@ -984,229 +955,15 @@ const AboutPage = () => {
               </h3>
             </div>
 
-            <div className="w-full">
-              <DividingHeader header={"Dues & Fees Breakdown"} />
-              <p className="text-base italic text-right font-semibold text-gray-600">
-                (effective May 2023)
-              </p>
+            <div className="mx-auto">
+                <button className="px-4 py-2 text-lg font-semibold text-white bg-blue  rounded mx-auto border-blue border-2 hover:bg-white hover:text-blue duration-200">Host MLP at your Establishment</button>
             </div>
-            <h3 className="text-center text-xl mb-2 leading-tight sm:text-3xl font-semibold text-blue mt-3">
-            $15 per player per division per season entry fee – covers the
-              following seasonal costs:
-            </h3>
-            <p className="text-sm sm:text-base mb-2 italic text-justify font-semibold text-gray-600">
-              This includes but not limited to trophies, website/hosting,
-              championship programs, posters, championship shirts, rule books,
-              lapel pins, advertising, ink, pens, paper, prizes, bonuses, etc.
-            </p>
-
-            <div className="grid grid-cols-1 gap-12">
-              <div className="min-h-36 flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-                <div className="w-full flex justify-start px-2 sm:px-4 items-center bg-blue py-4 text-white font-semibold text-xl  sm:text-2xl">
-                  Weekly dues (local divisions*) <br />
-                  $13 per player breaks down as follows:
-                </div>
-                <div className="flex-1 flex justify-center w-full py-3 md:py-6 px-2 sm:px-4 md:px-8 gap-2 flex-col items-start">
-                  <div className="flex flex-1 w-full border-b border-blue  pb-4 justify-start items-center">
-                    <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                      <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      $4.29 to top half of division & M/F MVP payouts
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                      $60/person over 14 weeks
-                    </h2>
-                  </div>
-
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                  <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      $3.57 to tourney prize fund   
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    $50/person over 14 weeks
-                    </h2>
-                  </div>
-                  
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                  <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      $1.71 to bottom half division payouts 
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    $24/person over 14 weeks
-                    </h2>
-                  </div>
-
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                  <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      $1.00 to Special League Events
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    $14/person over 14 weeks
-                    </h2>
-                  </div>
-
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                  <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      $2.00 to the league operator for his/her efforts 
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    $28/person over 14 weeks
-                    </h2>
-                  </div>
-
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                  <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      $0.43 to the league scorekeeper   
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    $6/person over 14 weeks
-                    </h2>
-                  </div>
-
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                  <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      $2.00 to green fees (this is MMS specific and additional to dues) $28/person over 14 weeks
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    </h2>
-                   
-                  </div>
-
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                  <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      No entry into the State Championships for these divisions
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    </h2>
-                  </div>
-
-                  <div className="flex flex-1 w-full pt-2 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                  <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      This is in addition to the $13 weekly due hence $15/week at MMS
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    </h2>
-                  </div>
-
-                </div>
-              </div>
+            <div className="mx-auto">
+                <Link to={"/join"} className="px-4 py-2 text-lg font-semibold text-white bg-blue  rounded mx-auto border-blue border-2 hover:bg-white hover:text-blue duration-200">Join Now</Link>
             </div>
+          
+          
             
-
-            <div className="grid grid-cols-1 gap-12">
-              <div className="min-h-36 flex flex-col justify-center items-center border-2 overflow-hidden border-blue rounded-sm">
-              <div className="w-full flex justify-start px-2 sm:px-4 items-center bg-blue py-4 text-white font-semibold text-xl  sm:text-2xl">
-              Weekly dues (out of town/franchise divisions) <br />
-                  based on $12 per player
-                </div>
-                <div className="flex-1 flex justify-center w-full py-3 md:py-6 px-2 sm:px-4 md:px-8 gap-2 flex-col items-start">
-                  <div className="flex flex-1 w-full border-b border-blue  pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                      <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      $2.00 to championship tourney prize fund      
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    $28/person /team /season
-                    </h2>
-                  </div>
-
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                      <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      $2.00 to the local league operator for his/her efforts    
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    $28/person
-                    </h2>
-                  </div>
-                  
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                      <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      $0.43 to the league for scorekeeping    
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    $6/person
-                    </h2>
-                  </div>
-
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                      <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      $1.00 to Special League Events 
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    $14/person
-                    </h2>
-                  </div>
-
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                      <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      $1.43 to championship entry fund ($150 entry) 
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    $20/person
-                    </h2>
-                  </div>
-
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                      <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      $5.14 to local payouts        
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    $72/person
-                    </h2>
-                  </div>
-
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                      <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      First three items are mandatory minimum requirements.
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    </h2>
-                   
-                  </div>
-
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                      <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      These are paid to the AZPL. 
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    </h2>
-                  </div>
-
-                  <div className="flex flex-1 w-full border-b border-blue py-2 pb-4 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                      <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      Entry into State Championships is $150/team.  This is a suggested fund.
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3  text-sm md:text-lg font-semibold  text-left px-1 md:px-4 ">
-                    </h2>
-                  </div>
-
-                  <div className="flex flex-1 w-full pt-2 justify-start items-center">
-                  <h2 className="text-blue w-1/2 md:w-3/4 leading-tight flex-1 text-base md:text-xl font-semibold  text-left px-4 ">
-                      <FontAwesomeIcon className="w-2 mr-2" icon={faCircle} />
-                      This number is adjustable. Ie meaning if you lower your dues below the recommended $12 it comes out of here.
-                    </h2>
-                    <h2 className="text-gray-600 w-1/3 text-lg font-semibold  text-left px-4 ">
-                    </h2>
-                  </div>
-
-                </div>
-              </div>
-            </div>
 
 
             <p className="text-base md:text-lg italic text-justify font-semibold text-gray-600">

@@ -4,6 +4,7 @@ import LeagueSelector from "../UI/LeagueSelector";
 import Page from "../UI/Page";
 import placeholder from "../assets/league-placeholder.png"
 import Dropdown from "../UI/Dropdown";
+import Map from "../Map/Map";
 
 const leagues = [
   
@@ -215,6 +216,7 @@ const LeaguesByGeo = ()=>{
         <div className="max-w-7xl  mx-auto p-4 bg-white text-slate-900">
           <div className="flex flex-col w-full gap-4">
             <LeagueSelector selected={"geo"}/>
+            <Map/>
             <div className="max-w-64 mx-auto"><Dropdown name={"Select a City"} values={CITIES} onChange={handleSelectCity} isOpen={isOpen} selectedValue={selectedCity} onToggle={() => setIsOpen(!isOpen)}  /></div>
             <LeaguesShowcase leagues={leagues} />
           </div>

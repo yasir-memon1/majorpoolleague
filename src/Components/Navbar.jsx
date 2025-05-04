@@ -40,7 +40,6 @@ const Navbar = () => {
           link: "/leagues-by-size",
         }],
     },
-    { label: "Calendar", link: "/calendar" },
     { label: "Stats", link: "/stats" },
     { label: "Weekly Scores", link: "/weekly-scores" },
     { label: "Standings", link: "/standings" },
@@ -94,6 +93,8 @@ const Navbar = () => {
           label: "Hall of Fame",
           link: "/hall-of-fame",
         },
+        { label: "Calendar", link: "/calendar" },
+
         {
           label: "Newsletters",
           link: "/newsletters",
